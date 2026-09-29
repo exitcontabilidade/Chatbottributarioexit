@@ -1,0 +1,1068 @@
+{
+  "reforma_tributaria": {
+    "modulo_1_visao_geral_e_conceitos": [
+      {
+        "id": 1,
+        "pergunta": "Qual é o objetivo principal da Reforma Tributária sobre o consumo no Brasil?",
+        "resposta": "Simplificar o sistema arrecadatório, eliminar a cumulatividade, acabar com a guerra fiscal e garantir maior transparência ao consumidor final."
+      },
+      {
+        "id": 2,
+        "pergunta": "O que é o sistema de IVA Dual (Imposto sobre Valor Agregado Dual)?",
+        "resposta": "É um modelo tributário dividido em duas esferas: a CBS (federal) e o IBS (estadual e municipal), que compartilham regras harmonizadas de incidência e apuração."
+      },
+      {
+        "id": 3,
+        "pergunta": "Quais são os 5 tributos extintos pela Reforma Tributária?",
+        "resposta": "PIS, Cofins e IPI (no âmbito federal), ICMS (estadual) e ISS (municipal)."
+      },
+      {
+        "id": 4,
+        "pergunta": "Quais são os novos tributos criados para substituir PIS, Cofins, IPI, ICMS e ISS?",
+        "resposta": "A Contribuição sobre Bens e Serviços (CBS), o Imposto sobre Bens e Serviços (IBS) e o Imposto Seletivo (IS)."
+      },
+      {
+        "id": 5,
+        "pergunta": "O que significa a sigla CBS e qual a sua competência tributária?",
+        "resposta": "Significa Contribuição sobre Bens e Serviços, de competência da União (âmbito federal)."
+      },
+      {
+        "id": 6,
+        "pergunta": "O que significa a sigla IBS e como é exercida sua competência?",
+        "resposta": "Significa Imposto sobre Bens e Serviços, de competência compartilhada entre Estados, Distrito Federal e Municípios."
+      },
+      {
+        "id": 7,
+        "pergunta": "O que é o Imposto Seletivo (IS) ou 'Imposto do Pecado'?",
+        "resposta": "Tributo extrafiscal destinado a desestimular o consumo de bens e serviços prejudiciais à saúde humana ou ao meio ambiente."
+      },
+      {
+        "id": 8,
+        "pergunta": "O que é o Princípio do Destino e como ele altera a arrecadação tributária?",
+        "resposta": "Princípio segundo o qual o tributo pertence ao local onde o bem ou serviço é consumido, não onde foi produzido, acabando com a guerra fiscal."
+      },
+      {
+        "id": 9,
+        "pergunta": "O que é o Princípio da Origem e por que ele está sendo abandonado no consumo?",
+        "resposta": "É a tributação no local da produção ou prestação do serviço; está sendo abandonado para evitar disputas de incentivos fiscais entre entes federativos."
+      },
+      {
+        "id": 10,
+        "pergunta": "Como a Reforma pretende acabar com a guerra fiscal entre estados e municípios?",
+        "resposta": "Através da adoção do princípio do destino para a arrecadação e da proibição de concessão de incentivos fiscais unilaterais do IBS."
+      },
+      {
+        "id": 11,
+        "pergunta": "O que é a trava de alíquota do IVA?",
+        "resposta": "Mecanismo legal que limita o teto da alíquota padrão do IBS e da CBS para evitar o aumento da carga tributária média sobre a receita do país."
+      },
+      {
+        "id": 12,
+        "pergunta": "Qual é a estimativa da alíquota padrão somada do IVA Dual (IBS + CBS)?",
+        "resposta": "A estimativa das autoridades fiscais gira em torno de 26,5% a 28% para a soma dos dois impostos."
+      },
+      {
+        "id": 13,
+        "pergunta": "O que é o Comitê Gestor do IBS e qual é sua atribuição?",
+        "resposta": "Entidade pública encarregada de centralizar a arrecadação, regulamentação unificada e distribuição das receitas do IBS entre estados e municípios."
+      },
+      {
+        "id": 14,
+        "pergunta": "A carga tributária global sobre o PIB brasileiro deve aumentar com a reforma?",
+        "resposta": "A Emenda Constitucional prevê mecanismos de trava de alíquota para garantir a neutralidade da carga tributária agregada nacional."
+      },
+      {
+        "id": 15,
+        "pergunta": "Como funciona a não cumulatividade plena no novo sistema?",
+        "resposta": "Todo imposto pago na aquisição de bens ou serviços gera crédito fiscal imediato para abater o imposto devido nas etapas seguintes de venda."
+      },
+      {
+        "id": 16,
+        "pergunta": "O que são tributos sobre o consumo e como diferem da tributação sobre renda/patrimônio?",
+        "resposta": "Tributos sobre consumo incidem no momento da compra/contratação; tributos sobre renda e patrimônio incidem sobre ganhos financeiros e posse de bens."
+      },
+      {
+        "id": 17,
+        "pergunta": "O que é o conceito de base ampla de tributação?",
+        "resposta": "Tributar a totalidade das operações com bens materiais, imateriais, direitos e serviços com o mínimo de exceções possíveis."
+      },
+      {
+        "id": 18,
+        "pergunta": "Como fica a neutralidade tributária com o novo modelo?",
+        "resposta": "As decisões econômicas das empresas passam a ser tomadas pela eficiência do negócio, e não por distorções de incentivos fiscais."
+      },
+      {
+        "id": 19,
+        "pergunta": "O que muda em relação ao conceito de insumo para tomada de crédito fiscal?",
+        "resposta": "Supera-se o conceito restritivo tradicional; em regra, qualquer bem ou serviço adquirido para a atividade empresarial dá direito a crédito."
+      },
+      {
+        "id": 20,
+        "pergunta": "O que significa o princípio do recolhimento na liquidação financeira?",
+        "resposta": "É o pagamento do imposto no ato do acerto financeiro da transação comercial, viabilizado por meio do sistema de Split Payment."
+      },
+      {
+        "id": 21,
+        "pergunta": "Como fica a transparência fiscal para o consumidor final na nota fiscal?",
+        "resposta": "Os valores exatos referentes à CBS e ao IBS aparecem destacados de forma clara no documento fiscal, indicando a alíquota real do produto."
+      },
+      {
+        "id": 22,
+        "pergunta": "Como funcionará a harmonização legislativa do IBS em todo o território nacional?",
+        "resposta": "Haverá uma Lei Complementar única para regulamentar as normas do IBS, evitando a existência de regulamentos estaduais ou municipais conflitantes."
+      },
+      {
+        "id": 23,
+        "pergunta": "O que é a Contribuição de Intervenção no Domínio Econômico (CIDE) mantida para a Zona Franca?",
+        "resposta": "Tributo mantido com alíquotas específicas sobre produtos concorrentes fabricados fora da ZFM para preservar a competitividade da região."
+      },
+      {
+        "id": 24,
+        "pergunta": "O que muda no conceito de prestação de serviço versus venda de mercadoria?",
+        "resposta": "A distinção perde relevância fiscal prática, pois ambos os fatos geradores são unificados e tributados pelas regras do IVA Dual."
+      },
+      {
+        "id": 25,
+        "pergunta": "Como o IVA reduz a litigiosidade tributária no país?",
+        "resposta": "Eliminando a sobreposição de regimes fiscais (ISS vs ICMS) e uniformizando os conceitos fiscais em legislação nacional consolidada."
+      },
+      {
+        "id": 26,
+        "pergunta": "Por que o IPI não foi totalmente extinto e onde ele continuará incidindo?",
+        "resposta": "Sua alíquota será zerada na maioria dos produtos, permanecendo apenas sobre itens que tenham concorrência direta com a produção da Zona Franca de Manaus."
+      },
+      {
+        "id": 27,
+        "pergunta": "Qual o papel do Congresso Nacional no estabelecimento das alíquotas do IBS e da CBS?",
+        "resposta": "Aprovar a Lei Complementar com a alíquota de referência federal e definir as margens de variação e limites permitidos."
+      },
+      {
+        "id": 28,
+        "pergunta": "Como o IVA Dual difere dos modelos de IVA adotados na Europa?",
+        "resposta": "Na Europa o IVA costuma ser único/nacional; no Brasil adotou-se o modelo Dual para preservar a autonomia arrecadatória dos entes federativos."
+      },
+      {
+        "id": 29,
+        "pergunta": "O que é o Fundo de Sustentabilidade do Amazonas?",
+        "resposta": "Fundo criado para apoiar o desenvolvimento socioeconômico e a diversificação das atividades produtivas no Estado do Amazonas."
+      },
+      {
+        "id": 30,
+        "pergunta": "O que é o direito à restituição de créditos e como será garantido em tempo hábil?",
+        "resposta": "Garantia de que impostos pagos na compra serão devolvidos rapidamente caso superem os tributos devidos na venda, via cruzamento do Split Payment."
+      }
+    ],
+    "modulo_2_cronograma_prazos_e_transicao": [
+      {
+        "id": 31,
+        "pergunta": "Qual é a linha do tempo completa da transição da Reforma Tributária (2026 a 2033)?",
+        "resposta": "2026 (fase de testes com CBS/IBS a 0,9% e 0,1%), 2027 (início efetivo da CBS e fim de PIS/Cofins), 2029 a 2032 (transição gradual do ICMS/ISS) e 2033 (novo sistema plena vigência)."
+      },
+      {
+        "id": 32,
+        "pergunta": "O que acontece na fase de testes em 2026?",
+        "resposta": "Início da cobrança de alíquotas simbólicas sem impacto de arrecadação para homologação e ajuste dos sistemas de emissão de nota e recolhimento."
+      },
+      {
+        "id": 33,
+        "pergunta": "Quais serão as alíquotas de teste aplicadas em 2026 para a CBS e para o IBS?",
+        "resposta": "A CBS terá alíquota de 0,9% e o IBS terá alíquota de 0,1%."
+      },
+      {
+        "id": 34,
+        "pergunta": "Os tributos pagos no período de testes em 2026 poderão ser compensados?",
+        "resposta": "Sim, os valores recolhidos no período de testes poderão ser compensados com o PIS/Cofins devido ou devolvidos ao contribuinte."
+      },
+      {
+        "id": 35,
+        "pergunta": "O que muda definitivamente em 2027 na esfera federal?",
+        "resposta": "Extinção definitiva do PIS e da Cofins, início da cobrança integral da CBS e aplicação de alíquotas zeradas do IPI (salvo na ZFM)."
+      },
+      {
+        "id": 36,
+        "pergunta": "Quando o PIS e a Cofins serão totalmente extintos?",
+        "resposta": "Em 1º de janeiro de 2027."
+      },
+      {
+        "id": 37,
+        "pergunta": "Quando o IPI terá suas alíquotas reduzidas a zero (exceto Zona Franca)?",
+        "resposta": "A partir de 2027, mantendo-se a incidência residual apenas para produtos com fabricação equivalente na Zona Franca de Manaus."
+      },
+      {
+        "id": 38,
+        "pergunta": "Como será a redução gradual do ICMS e do ISS entre 2029 e 2032?",
+        "resposta": "As alíquotas de ICMS e ISS serão reduzidas à razão de 1/10 em 2029, até chegarem a zero em 2033, enquanto o IBS sobe proporcionalmente."
+      },
+      {
+        "id": 39,
+        "pergunta": "Em que ano o ICMS e o ISS deixam de existir oficialmente?",
+        "resposta": "Em 31 de dezembro de 2032, sumindo do ordenamento em 2033."
+      },
+      {
+        "id": 40,
+        "pergunta": "Em que ano o IBS e a CBS entram em vigor com 100% da sua alíquota plena?",
+        "resposta": "A partir de 1º de janeiro de 2033 o novo sistema de IVA Dual opera com capacidade total."
+      },
+      {
+        "id": 41,
+        "pergunta": "Como funcionará a convivência entre o sistema tributário antigo e o novo durante 7 anos?",
+        "resposta": "A apuração ocorrerá em formato híbrido: regras legadas e novas rodarão em paralelo com ajustes graduais de proporção nas alíquotas."
+      },
+      {
+        "id": 42,
+        "pergunta": "Como serão aproveitados os saldos credores de ICMS acumulados até o fim do imposto?",
+        "resposta": "Serão ressarcidos em parcelas mensais ao longo de 24 anos (240 parcelas), conforme regras de transição estipuladas por Lei Complementar."
+      },
+      {
+        "id": 43,
+        "pergunta": "Qual é o prazo para a devolução dos créditos acumulados de ICMS do passado?",
+        "resposta": "O parcelamento prevê a compensação em até 240 meses (20 anos), contados do início da vigência integral do novo sistema."
+      },
+      {
+        "id": 44,
+        "pergunta": "O que acontece com os créditos acumulados de PIS e Cofins a partir de 2027?",
+        "resposta": "Poderão ser compensados com a CBS ou ressarcidos em dinheiro no prazo regulamentado pela Receita Federal."
+      },
+      {
+        "id": 45,
+        "pergunta": "O que é o Fundo de Compensação de Benefícios Fiscais e qual seu objetivo?",
+        "resposta": "Fundo criado pela União para compensar empresas pelas perdas com a redução antecipada de benefícios concedidos sob o antigo ICMS."
+      },
+      {
+        "id": 46,
+        "pergunta": "Até quando valerão os incentivos fiscais estaduais concedidos no âmbito do ICMS?",
+        "resposta": "Serão reduzidos gradualmente conforme cronograma de transição até a extinção definitiva em 31 de dezembro de 2032."
+      },
+      {
+        "id": 47,
+        "pergunta": "O que é o Fundo de Desenvolvimento Regional (FDR) e quando ele entra em operação?",
+        "resposta": "Mecanismo financiado pela União para incentivar o crescimento de regiões menos desenvolvidas após o fim dos incentivos fiscais estaduais."
+      },
+      {
+        "id": 48,
+        "pergunta": "Como os estados e municípios receberão a transição das receitas de arrecadação?",
+        "resposta": "Existirá uma transição federativa de 50 anos para ajustar a partilha do imposto arrecadado com base na origem para o destino final."
+      },
+      {
+        "id": 49,
+        "pergunta": "Qual o prazo para empresas adaptarem seus ERPs e sistemas fiscais?",
+        "resposta": "Os ajustes nos software de emissão e parametrização fiscal devem estar operacionais para o período de testes iniciado em 2026."
+      },
+      {
+        "id": 50,
+        "pergunta": "O que muda para o envio de obrigações acessórias em 2026 e 2027?",
+        "resposta": "Terão início novas escriturações digitais unificadas com inclusão dos campos de apuração do IBS e CBS nos documentos fiscais eletrônicos."
+      },
+      {
+        "id": 51,
+        "pergunta": "Como será calibrada a alíquota de referência dos novos impostos?",
+        "resposta": "Será calculada com base na arrecadação média dos tributos antigos dos 5 anos anteriores para evitar aumento da carga total."
+      },
+      {
+        "id": 52,
+        "pergunta": "O que acontece se a alíquota padrão calculada ultrapassar o teto limite fixado?",
+        "resposta": "O Poder Executivo e o Comitê Gestor deverão propor ajustes nas isenções e regimes reduzidos para reenquadrar ao teto."
+      },
+      {
+        "id": 53,
+        "pergunta": "Em quanto tempo a Receita Federal deverá ressarcir os saldos credores do IBS e da CBS?",
+        "resposta": "A meta é o reembolso automatizado via Split Payment no prazo de 30 a 60 dias para empresas qualificadas em conformidade."
+      },
+      {
+        "id": 54,
+        "pergunta": "Como fica a transição de contratos de longo prazo celebrados sob a legislação antiga?",
+        "resposta": "Será permitida a repactuação de cláusulas financeiras contratuais para refletir a alteração real nas alíquotas do imposto sobre o consumo."
+      },
+      {
+        "id": 55,
+        "pergunta": "Quando o Imposto Seletivo passa a ser cobrado no Brasil?",
+        "resposta": "Passa a incidir a partir de 2027, juntamente com a vigência integral da CBS e extinção do PIS/Cofins."
+      },
+      {
+        "id": 56,
+        "pergunta": "O que acontece com os incentivos da Lei do Bem na transição?",
+        "resposta": "Permanecem vigentes na parte referente ao Imposto de Renda e CSLL, necessitando de adequação legal para os créditos indiretos."
+      },
+      {
+        "id": 57,
+        "pergunta": "Quais regras valem para os pedidos de restituição e compensação protocolados antes da reforma?",
+        "resposta": "Seguem o rito administrativo e processual vigente na data da sua protocolização na Receita Federal ou Secretarias de Fazenda."
+      },
+      {
+        "id": 58,
+        "pergunta": "Como fica a transição do Regime de Lucro Presumido para o novo modelo?",
+        "resposta": "O imposto sobre o consumo do Lucro Presumido integrará o modelo de CBS/IBS pela regra geral de débito e crédito, sem alterar o IRPJ/CSLL."
+      },
+      {
+        "id": 59,
+        "pergunta": "Como se dará a fiscalização conjunta durante o período híbrido?",
+        "resposta": "Auditores federais, estaduais e municipais atuarão integrados via Comitê Gestor do IBS e Receita Federal em cadastros compartilhados."
+      },
+      {
+        "id": 60,
+        "pergunta": "Quais ações de planejamento fiscal devem ser tomadas pelas empresas antes do marco de 2026?",
+        "resposta": "Mapeamento da cadeia de suprimentos, revisão dos cadastros de produtos, auditoria de saldos credores legados e atualização tecnológica dos ERPs."
+      }
+    ],
+    "modulo_3_impacto_nos_setores_economicos": [
+      {
+        "id": 61,
+        "pergunta": "Como a Reforma Tributária afeta o setor de serviços em geral?",
+        "resposta": "Poderá ter um aumento da alíquota nominal de imposto, mitigado parcialmente pela geração plena de créditos fiscais sobre aquisições B2B."
+      },
+      {
+        "id": 62,
+        "pergunta": "Qual é o impacto esperado da reforma no setor industrial e de manufatura?",
+        "resposta": "Grande benefício pelo fim da cumulatividade, aproveitamento integral de créditos e desoneração expressiva do processo produtivo e exportador."
+      },
+      {
+        "id": 63,
+        "pergunta": "Como a reforma beneficia as empresas exportadoras brasileiras?",
+        "resposta": "Garante a desoneração total das exportações (imposto zero) e devolve rapidamente os créditos fiscais gerados na compra de insumos."
+      },
+      {
+        "id": 64,
+        "pergunta": "Como fica a tributação das importações de bens e serviços?",
+        "resposta": "As importações pagarão CBS e IBS com alíquotas equiparadas aos produtos e serviços nacionais, mantendo a isonomia competitiva."
+      },
+      {
+        "id": 65,
+        "pergunta": "Quais produtos fazem parte da Cesta Básica Nacional de Alíquota Zero?",
+        "resposta": "Alimentos de consumo popular definidos em Lei Complementar como arroz, feijão, leite, pão e itens essenciais à nutrição da população."
+      },
+      {
+        "id": 66,
+        "pergunta": "Quais setores terão redução de 60% nas alíquotas do IBS e da CBS?",
+        "resposta": "Saúde, educação, dispositivos médicos, medicamentos, transporte público, produtos de higiene, atividades culturais e agronegócio."
+      },
+      {
+        "id": 67,
+        "pergunta": "Como fica a tributação de serviços de saúde (hospitais, exames e laboratórios)?",
+        "resposta": "Terão direito à alíquota reduzida correspondente a 40% da alíquota padrão (desconto de 60%)."
+      },
+      {
+        "id": 68,
+        "pergunta": "Qual o impacto da reforma para o setor de educação privada (escolas e universidades)?",
+        "resposta": "Beneficiam-se de alíquota reduzida de 40% em relação à alíquota padrão do IVA Dual para mensalidades escolares e acadêmicas."
+      },
+      {
+        "id": 69,
+        "pergunta": "Como será a tributação sobre medicamentos e dispositivos médicos?",
+        "resposta": "Remédios essenciais terão alíquota zero e os demais medicamentos enquadrados na lista específica contarão com desconto de 60%."
+      },
+      {
+        "id": 70,
+        "pergunta": "Qual tratamento tributário favorecido terá o Agronegócio e os produtores rurais?",
+        "resposta": "Redução de alíquota em insumos agropecuários e isenção parcial ou alíquota reduzida em produtos do campo e hortifrutigranjeiros."
+      },
+      {
+        "id": 71,
+        "pergunta": "Qual o limite de faturamento para o produtor rural pessoa física continuar fora do IBS/CBS?",
+        "resposta": "O produtor rural com faturamento anual de até R$ 3,6 milhões pode optar por não ser contribuinte do IBS e da CBS."
+      },
+      {
+        "id": 72,
+        "pergunta": "Como fica o setor de transporte público coletivo de passageiros?",
+        "resposta": "Conta com regimes favorecidos, podendo ter isenção ou redução de até 60% nas alíquotas urbanas e metropolitanas."
+      },
+      {
+        "id": 73,
+        "pergunta": "Qual é o regime específico para o setor imobiliário (compra, venda e locação de imóveis)?",
+        "resposta": "Regime diferenciado com redutores de base de cálculo e alíquotas específicas para evitar a elevação exagerada nos preços de moradia."
+      },
+      {
+        "id": 74,
+        "pergunta": "Como a reforma tributa a construção civil e incorporação imobiliária?",
+        "resposta": "Aplicam-se regras de apuração por regime específico com deduções na base de cálculo relativas a terrenos e materiais empregados."
+      },
+      {
+        "id": 75,
+        "pergunta": "Como funcionará o regime específico para serviços financeiros (bancos e corretoras)?",
+        "resposta": "Tributação sobre a margem de lucro operacional (spread) com alíquotas diferenciadas, sem aproveitamento tradicional de créditos."
+      },
+      {
+        "id": 76,
+        "pergunta": "Como serão tributados os planos de saúde no novo modelo?",
+        "resposta": "Estarão enquadrados no regime de tributação reduzida do setor de saúde ou em regras específicas de apuração sobre a receita líquida."
+      },
+      {
+        "id": 77,
+        "pergunta": "Qual é a regra especial aplicada para bares, restaurantes e hotelaria?",
+        "resposta": "Regime diferenciado com alíquotas reduzidas e simplificação na base de cálculo sem acúmulo de créditos de entradas."
+      },
+      {
+        "id": 78,
+        "pergunta": "Como fica o setor de parques temáticos, aviação regional e turismo?",
+        "resposta": "Têm acesso a regras tributárias diferenciadas e incentivos operacionais voltados ao estímulo do turismo nacional."
+      },
+      {
+        "id": 79,
+        "pergunta": "Qual a alíquota reduzida garantida a 18 profissões liberais regulamentadas?",
+        "resposta": "Desconto de 30% na alíquota do IVA (pagam 70% da alíquota padrão) quando prestados por sociedades de profissionais submetidas a regras específicas."
+      },
+      {
+        "id": 80,
+        "pergunta": "Quais profissionais liberais se enquadram no desconto de 30% da alíquota?",
+        "resposta": "Advogados, médicos, engenheiros, arquitetos, contadores, economistas, veterinários, psicólogos, entre outras profissões regulamentadas por lei."
+      },
+      {
+        "id": 81,
+        "pergunta": "Como a reforma afeta o e-commerce e as vendas digitais?",
+        "resposta": "Passam a recolher a CBS e o IBS diretamente com base na localização do comprador (destino), automatizado por plataformas digitais."
+      },
+      {
+        "id": 82,
+        "pergunta": "Como serão tributados os serviços de streaming e software como serviço (SaaS)?",
+        "resposta": "Incidência da alíquota padrão de IBS e CBS recolhida na localização do consumidor do serviço."
+      },
+      {
+        "id": 83,
+        "pergunta": "Qual é a regra tributária para plataformas de intermediação e marketplaces?",
+        "resposta": "Poderão ser responsabilizadas pelo recolhimento do imposto incidente sobre vendas realizadas por terceiros em suas plataformas."
+      },
+      {
+        "id": 84,
+        "pergunta": "Como fica o combustível e derivados de petróleo na tributação monofásica?",
+        "resposta": "Tributados por alíquotas ad rem (valor fixo por litro) uniformes em todo o território nacional e cobrados uma única vez."
+      },
+      {
+        "id": 85,
+        "pergunta": "Como será a tributação de cooperativas no novo sistema?",
+        "resposta": "Haverá regime específico de não incidência nos atos cooperativos entre a entidade e seus associados."
+      },
+      {
+        "id": 86,
+        "pergunta": "O que muda para o setor de mineração e extração vegetal?",
+        "resposta": "Estão sujeitos ao Imposto Seletivo sobre bens minerais extraídos além da cobrança do IBS e CBS com desoneração nas exportações."
+      },
+      {
+        "id": 87,
+        "pergunta": "O que muda para o setor de telecomunicações e energia elétrica?",
+        "resposta": "Deixam de sofrer a alta carga isolada do antigo ICMS e passam a pagar a alíquota padrão com direito a crédito pleno pelas empresas."
+      },
+      {
+        "id": 88,
+        "pergunta": "Como serão tributados os jogos de azar, apostas de quota fixa (bets) e loterias?",
+        "resposta": "Estarão sujeitos à incidência do Imposto Seletivo acrescido da tributação pelo IVA em regimes de apuração específicos."
+      },
+      {
+        "id": 89,
+        "pergunta": "Como fica o ecossistema de Startups e empresas de inovação?",
+        "resposta": "Terão facilidade em comercializar soluções para o mercado B2B sem gerar cumulatividade de imposto nas empresas contratantes."
+      },
+      {
+        "id": 90,
+        "pergunta": "Qual o impacto para a cultura, produções artísticas e setor de eventos?",
+        "resposta": "Direito à alíquota reduzida com desconto de 60% e regimes especiais para atração de espetáculos e feiras."
+      }
+    ],
+    "modulo_4_simples_nacional_e_mei": [
+      {
+        "id": 91,
+        "pergunta": "O Simples Nacional será extinto com a Reforma Tributária?",
+        "resposta": "Não. O Simples Nacional continua existindo como regime favorecido previsto na Constituição Federal."
+      },
+      {
+        "id": 92,
+        "pergunta": "O Microempreendedor Individual (MEI) continuará existindo no novo sistema?",
+        "resposta": "Sim, o MEI permanece intacto com arrecadação simplificada unificada."
+      },
+      {
+        "id": 93,
+        "pergunta": "Como funciona a opção 'híbrida' do Simples Nacional em relação ao IBS e à CBS?",
+        "resposta": "A empresa pode continuar pagando todos os tributos no Simples ou optar por recolher a CBS e o IBS pelo regime regular para gerar crédito integral."
+      },
+      {
+        "id": 94,
+        "pergunta": "O que acontece se uma empresa do Simples Nacional decidir recolher IBS/CBS pelo regime regular?",
+        "resposta": "Ela continuará no Simples para impostos diretos (IRPJ/CSLL/Folha), mas apurará o IBS/CBS no sistema de débito e crédito comum."
+      },
+      {
+        "id": 95,
+        "pergunta": "As empresas do Simples Nacional continuarão gerando créditos de impostos para seus clientes?",
+        "resposta": "Se mantiverem a opção tradicional, repassam apenas o crédito equivalente ao valor efetivamente pago de imposto na sua alíquota do Simples."
+      },
+      {
+        "id": 96,
+        "pergunta": "Qual é a diferença entre comprar de fornecedor do Simples vs. de empresa do regime regular?",
+        "resposta": "Comprar do regime regular gera crédito integral do IVA; do Simples tradicional gera apenas crédito fracionado proporcional."
+      },
+      {
+        "id": 97,
+        "pergunta": "Como o cálculo de repasse de crédito do Simples afeta a competitividade B2B?",
+        "resposta": "Empresas compradoras podem preferir fornecedores do regime regular para aproveitar o crédito completo de IVA, pressionando o Simples."
+      },
+      {
+        "id": 98,
+        "pergunta": "Uma pequena empresa do Simples poderá se creditar de tributos das suas compras?",
+        "resposta": "No regime tradicional do Simples ela não aproveita créditos das compras; só aproveita se optar por recolher IBS/CBS pelo regime regular."
+      },
+      {
+        "id": 99,
+        "pergunta": "Como fica o preenchimento e apuração do PGDAS-D com a reforma?",
+        "resposta": "O PGDAS-D passará por reformulação para segregar as alíquotas do IBS e da CBS durante a fase de transição e adequação."
+      },
+      {
+        "id": 100,
+        "pergunta": "Como a reforma afeta os limites e sublimites de faturamento do Simples Nacional?",
+        "resposta": "Os limites teto estaduais para ICMS e ISS passam a se adequar progressivamente ao limite máximo nacional unificado."
+      },
+      {
+        "id": 101,
+        "pergunta": "O regime unificado de arrecadação do Simples sofrerá alterações de alíquotas?",
+        "resposta": "As alíquotas das tabelas do Simples serão ajustadas proporcionalmente para acomodar a substituição dos tributos extintos pela CBS/IBS."
+      },
+      {
+        "id": 102,
+        "pergunta": "Empresas do Simples precisarão emitir nota fiscal nos novos padrões de IBS/CBS?",
+        "resposta": "Sim, os sistemas emissores do Simples terão que se adequar aos novos campos de preenchimento dos impostos criados."
+      },
+      {
+        "id": 103,
+        "pergunta": "Como fica a cobrança do diferencial de alíquota (DIFAL) para optantes do Simples?",
+        "resposta": "O DIFAL tradicional do ICMS deixa de existir com a implementação da cobrança do IBS totalmente alocada no destino."
+      },
+      {
+        "id": 104,
+        "pergunta": "O MEI precisará pagar IBS e CBS separadamente da DAS-MEI?",
+        "resposta": "Não, o MEI continuará recolhendo todos os tributos reunidos em um único valor fixo mensal através do DAS-MEI."
+      },
+      {
+        "id": 105,
+        "pergunta": "Vale a pena para prestadores de serviços no Simples migrar para o Lucro Presumido/Real?",
+        "resposta": "Dependerá do perfil do cliente (se é B2B ou B2C) e do volume de custos operacionais geradores de créditos fiscais."
+      },
+      {
+        "id": 106,
+        "pergunta": "Como o Simples se comporta em vendas direcionadas diretamente ao consumidor final (B2C)?",
+        "resposta": "O regime tradicional do Simples continua extremamente vantajoso, pois o consumidor final não utiliza crédito fiscal."
+      },
+      {
+        "id": 107,
+        "pergunta": "Como o Simples se comporta em vendas direcionadas a pessoas jurídicas (B2B)?",
+        "resposta": "Pode haver desvantagem comercial devido ao repasse reduzido de crédito ao comprador, recomendando a migração parcial do IVA."
+      },
+      {
+        "id": 108,
+        "pergunta": "Há mudanças na substituição tributária (ST) para optantes do Simples Nacional?",
+        "resposta": "O instituto da Substituição Tributária é extinto de forma gradual junto com o fim do ICMS e ISS."
+      },
+      {
+        "id": 109,
+        "pergunta": "Qual o prazo legal de opção pelo regime regular para 2027 para optantes do Simples?",
+        "resposta": "A opção por recolher IBS e CBS no regime regular deve ser formalizada no início do ano-calendário, conforme regulamento."
+      },
+      {
+        "id": 110,
+        "pergunta": "Como o Split Payment afetará as operações diárias das microempresas?",
+        "resposta": "Para optantes do Simples no regime regular, o imposto será retido no ato do recebimento das vendas eletrônicas."
+      },
+      {
+        "id": 111,
+        "pergunta": "As compras de insumos por empresas do Simples terão alíquota reduzida de fornecedores?",
+        "resposta": "As compras seguirão a alíquota regular praticada pelo fornecedor, independente de o comprador ser optante do Simples."
+      },
+      {
+        "id": 112,
+        "pergunta": "O Simples continuará englobando contribuições patronais e de folha de pagamento?",
+        "resposta": "Sim, as regras do Simples para a Contribuição Previdenciária Patronal (CPP) não foram alteradas pela reforma do consumo."
+      },
+      {
+        "id": 113,
+        "pergunta": "Como fica a retenção na fonte em serviços prestados por optantes do Simples?",
+        "resposta": "Mecanismos antigos de retenção serão substituídos pela tecnologia de liquidação direta pelo Split Payment."
+      },
+      {
+        "id": 114,
+        "pergunta": "Como será o tratamento do Simples Nacional nas operações interestaduais?",
+        "resposta": "Seguirá as regras gerais de repasse do tributo ao estado de destino da mercadoria ou serviço."
+      },
+      {
+        "id": 115,
+        "pergunta": "Quais ferramentas de simulação tributária a pequena empresa deve consultar antes da transição?",
+        "resposta": "Calculadoras de impacto da transição e simuladores de margem competitiva liberados pelo Sebrae e Receita Federal."
+      },
+      {
+        "id": 116,
+        "pergunta": "Empresas do Simples sujeitas a regimes específicos (como transportes) mudarão de regra?",
+        "resposta": "Terão regras adaptadas para integrar os regimes específicos sem perder a simplicidade operacional original."
+      },
+      {
+        "id": 117,
+        "pergunta": "O que muda nas exportações feitas por optantes do Simples Nacional?",
+        "resposta": "A desoneração total de exportação continua garantida nas operações internacionais realizadas por optantes do Simples."
+      },
+      {
+        "id": 118,
+        "pergunta": "O que acontece com o ressarcimento do ICMS-ST acumulado no Simples na transição?",
+        "resposta": "Deverá seguir os procedimentos estaduais de restituição estabelecidos na transição para extinção do imposto estadual."
+      },
+      {
+        "id": 119,
+        "pergunta": "A burocracia contábil para o microempresário vai aumentar ou diminuir a longo prazo?",
+        "resposta": "Após a fase de adaptação, a tendência é de redução drástica pelo fim da multiplicidade de obrigações estaduais e municipais."
+      },
+      {
+        "id": 120,
+        "pergunta": "Qual a recomendação para o MEI que está próximo do limite de faturamento?",
+        "resposta": "Planejar o desenquadramento avaliando com antecedência a opção de tributação pelo IVA no B2B ou manutenções do Simples."
+      }
+    ],
+    "modulo_5_mecanismos_especiais_e_operacao": [
+      {
+        "id": 121,
+        "pergunta": "O que é o sistema de Split Payment na Reforma Tributária?",
+        "resposta": "Mecanismo bancário que segrega e recolhe o imposto (IBS/CBS) automaticamente na liquidação financeira da transação."
+      },
+      {
+        "id": 122,
+        "pergunta": "Como funciona o Split Payment inteligente / automatizado nas transações financeiras?",
+        "resposta": "O sistema bancário lê as informações da Nota Fiscal Eletrônica e envia a parte do imposto ao governo e o líquido ao vendedor."
+      },
+      {
+        "id": 123,
+        "pergunta": "Qual instituição financeira ou ente fará a retenção do imposto no Split Payment?",
+        "resposta": "As instituições de pagamento, credenciadoras de cartão de crédito e bancos de rede onde tramitar o pagamento do comprador."
+      },
+      {
+        "id": 124,
+        "pergunta": "Como o Split Payment afeta diretamente o capital de giro e fluxo de caixa das empresas?",
+        "resposta": "O tributo é recolhido imediatamente na transação, impedindo a empresa de usar o imposto arrecadado como caixa até o vencimento mensal."
+      },
+      {
+        "id": 125,
+        "pergunta": "O que acontece com o Split Payment em pagamentos efetuados via PIX ou Cartão de Crédito?",
+        "resposta": "O arranjo do Pix e do cartão efetuará a retenção instantânea da fração equivalente ao IVA e direcionará para a conta do fisco."
+      },
+      {
+        "id": 126,
+        "pergunta": "O que ocorre no Split Payment se a transação envolver concessão de créditos acumulados?",
+        "resposta": "O sistema calcula o imposto líquido devido considerando os créditos cadastrados previamente pela empresa no banco de dados fiscal."
+      },
+      {
+        "id": 127,
+        "pergunta": "Como o Split Payment previne a sonegação e a inadimplência tributária?",
+        "resposta": "Impossibilita que a empresa receba o valor do imposto do comprador e não repasse aos cofres públicos, zerando o contencioso de cobrança."
+      },
+      {
+        "id": 128,
+        "pergunta": "O que é o mecanismo de Cashback tributário?",
+        "resposta": "Devolução de parte dos impostos pagos em produtos e serviços essenciais destinada às famílias de baixa renda."
+      },
+      {
+        "id": 129,
+        "pergunta": "Quem tem direito a receber o Cashback de impostos no Brasil?",
+        "resposta": "Famílias cadastradas no Cadastro Único (CadÚnico) para Programas Sociais do Governo Federal que preencham os requisitos de renda."
+      },
+      {
+        "id": 130,
+        "pergunta": "Qual a renda familiar elegível para devolução dos impostos no Cashback?",
+        "resposta": "Definida por Lei Complementar, com foco em famílias com renda per capita de até meio salário mínimo."
+      },
+      {
+        "id": 131,
+        "pergunta": "Quais bens e serviços darão direito à devolução do imposto via Cashback?",
+        "resposta": "Contas de energia elétrica, água, esgoto, gás de cozinha e alimentos elegíveis na cesta básica com devolução parcial ou total."
+      },
+      {
+        "id": 132,
+        "pergunta": "O Cashback incidirá sobre as contas de serviços públicos essenciais (energia, gás, água)?",
+        "resposta": "Sim, com percentuais garantidos de devolução das parcelas de CBS e IBS incidentes nessas faturas residenciais."
+      },
+      {
+        "id": 133,
+        "pergunta": "Como será feito o reembolso do Cashback para a conta bancária do cidadão?",
+        "resposta": "O depósito ocorrerá de forma direta em conta bancária ou cartão do benefício social cadastrado no CPF do titular."
+      },
+      {
+        "id": 134,
+        "pergunta": "Qual é a porcentagem estimada de devolução do IBS e da CBS no Cashback?",
+        "resposta": "Proposta de 100% da CBS e 20% do IBS sobre contas essenciais e botijão de gás, podendo variar conforme regulamentação."
+      },
+      {
+        "id": 135,
+        "pergunta": "Quais produtos e serviços estão sujeitos ao Imposto Seletivo (IS)?",
+        "resposta": "Bebidas alcoólicas, cigarros, veículos poluentes, bebidas açucaradas, apostas eletrônicas e atividades extrativas minerais."
+      },
+      {
+        "id": 136,
+        "pergunta": "Bebidas alcoólicas pagarão Imposto Seletivo e qual o impacto no preço final?",
+        "resposta": "Sim, a alíquota será graduada pelo teor alcoólico da bebida, elevando a carga sobre destilados e bebidas de alta graduação."
+      },
+      {
+        "id": 137,
+        "pergunta": "Produtos fumígenos (cigarros) terão aumento de alíquota pelo Imposto Seletivo?",
+        "resposta": "Sim, como forma de desestimular o consumo pelos danos reconhecidos à saúde pública."
+      },
+      {
+        "id": 138,
+        "pergunta": "Bebidas açucaradas entram na incidência do Imposto Seletivo?",
+        "resposta": "Refrigerantes e bebidas com elevado teor de açúcar adicionado estão sujeitos à incidência do imposto para combater a obesidade."
+      },
+      {
+        "id": 139,
+        "pergunta": "Automóveis, aeronaves e embarcações pagarão Imposto Seletivo?",
+        "resposta": "Veículos a motor fóssil e embarcações/aeronaves poluidoras pagarão o IS baseado no seu nível de emissão de carbono."
+      },
+      {
+        "id": 140,
+        "pergunta": "Bens minerais extraídos (como minério de ferro e petróleo) serão tributados pelo IS?",
+        "resposta": "Sim, a extração de bens minerais e fósseis poderá ser taxada em até 1% do valor do bem extraído na fonte."
+      },
+      {
+        "id": 141,
+        "pergunta": "O Imposto Seletivo gera crédito fiscal para as etapas seguintes da cadeia produtiva?",
+        "resposta": "Não. O Imposto Seletivo é um tributo cumulativo e não dá direito a crédito fiscal nas etapas posteriores."
+      },
+      {
+        "id": 142,
+        "pergunta": "O Imposto Seletivo incide sobre produtos e serviços destinados à exportação?",
+        "resposta": "Em regra geral não, exceto na tributação sobre a extração de bens minerais."
+      },
+      {
+        "id": 143,
+        "pergunta": "O Imposto Seletivo pode incidir na mesma base de cálculo do IBS e da CBS?",
+        "resposta": "O valor do Imposto Seletivo compõe a base de cálculo da CBS e do IBS nas operações internas do produto."
+      },
+      {
+        "id": 144,
+        "pergunta": "Como funcionará o controle eletrônico no Split Payment quando o pagamento for parcelado?",
+        "resposta": "A retenção do tributo será fatiada proporcionalmente ao valor recebido em cada parcela financeira."
+      },
+      {
+        "id": 145,
+        "pergunta": "Como fica o reembolso imediato em caso de devolução de mercadoria ou cancelamento de venda?",
+        "resposta": "O sistema do Split Payment estorna o imposto gerando crédito ou devolução automática de limites no sistema bancário."
+      },
+      {
+        "id": 146,
+        "pergunta": "A população de baixa renda precisará guardar cupons fiscais para receber o Cashback?",
+        "resposta": "Não necessariamente; a vinculação do CPF na nota no momento da compra alimentará automaticamente o sistema do benefício."
+      },
+      {
+        "id": 147,
+        "pergunta": "O Cashback é tributável no Imposto de Renda do beneficiário?",
+        "resposta": "Não, o valor devolvido por devolução de imposto no Cashback é isento de tributação sobre a renda."
+      },
+      {
+        "id": 148,
+        "pergunta": "O Imposto Seletivo pode ser aplicado a alimentos ultraprocessados no futuro?",
+        "resposta": "Somente se houver alteração legislativa por nova Lei Complementar pelo Congresso Nacional."
+      },
+      {
+        "id": 149,
+        "pergunta": "Qual a diferença operacional entre retenção na fonte tradicional e o Split Payment?",
+        "resposta": "A retenção tradicional exige apuração manual e guia da fonte pagadora; o Split Payment ocorre na hora via software do arranjo bancário."
+      },
+      {
+        "id": 150,
+        "pergunta": "Como as instituições de pagamento (adquirentes e bancos) estão se preparando operacionalmente?",
+        "resposta": "Desenvolvendo APIs de integração de alta velocidade com os servidores da Receita Federal e do Comitê Gestor."
+      }
+    ],
+    "modulo_6_regimes_especiais_imunidades_e_patrimonio": [
+      {
+        "id": 151,
+        "pergunta": "Quais regimes favorecidos e diferenciados foram mantidos na Constituição?",
+        "resposta": "Zona Franca de Manaus, Simples Nacional, Cooperativas, Combustíveis, Serviços Financeiros, Imobiliários e Saúde/Educação."
+      },
+      {
+        "id": 152,
+        "pergunta": "O que muda na Zona Franca de Manaus (ZFM) e nas Áreas de Livre Comércio (ALC)?",
+        "resposta": "São mantidos os diferenciais competitivos fiscais e garantida a manutenção das vantagens relativas da região por mecanismos de crédito."
+      },
+      {
+        "id": 153,
+        "pergunta": "Como a Reforma preserva a competitividade das empresas instaladas na Zona Franca de Manaus?",
+        "resposta": "Por meio do IPI residual, alíquotas diferenciadas do IBS/CBS e créditos presumidos exclusivos na compra da ZFM."
+      },
+      {
+        "id": 154,
+        "pergunta": "O que muda em relação ao IPVA (Imposto sobre a Propriedade de Veículos Automotores)?",
+        "resposta": "O IPVA tem sua cobrança expandida para veículos aquáticos e aéreos particulares de recreação e passeio."
+      },
+      {
+        "id": 155,
+        "pergunta": "O IPVA passará a incidir sobre veículos aquáticos e aéreos (jatinhos, iates, jet-skis)?",
+        "resposta": "Sim, proprietários de jatinhos, helicópteros, iates e jet-skis de passeio passam a pagar o IPVA estadual."
+      },
+      {
+        "id": 156,
+        "pergunta": "O IPVA terá alíquotas progressivas com base no impacto ambiental do veículo?",
+        "resposta": "Sim, o imposto poderá ter alíquotas diferenciadas dependendo do tipo de combustível, emissão de poluentes e sustentabilidade do motor."
+      },
+      {
+        "id": 157,
+        "pergunta": "Quais veículos aquáticos e aéreos continuam isentos de IPVA?",
+        "resposta": "Embarcações de pesca artesanal, transporte aquaviário comercial, aeronaves agrícolas e de aviação comercial de passageiros."
+      },
+      {
+        "id": 158,
+        "pergunta": "O que muda no ITCMD (Imposto sobre Transmissão Causa Mortis e Doação)?",
+        "resposta": "Torna-se obrigatoriamente progressivo em razão do valor da herança/doação e passa a permitir cobrança sobre bens no exterior."
+      },
+      {
+        "id": 159,
+        "pergunta": "O ITCMD passa a ser obrigatoriamente progressivo em todos os estados do Brasil?",
+        "resposta": "Sim, o imposto sobre heranças deve aplicar alíquotas maiores para valores patrimoniais mais elevados em todo o país."
+      },
+      {
+        "id": 160,
+        "pergunta": "Onde será devido o ITCMD em heranças envolvendo imóveis e bens móveis?",
+        "resposta": "Para imóveis, onde se situa o bem; para bens móveis/títulos, onde era domiciliado o falecido ou o doador."
+      },
+      {
+        "id": 161,
+        "pergunta": "Como fica a cobrança de ITCMD sobre doações e heranças no exterior?",
+        "resposta": "Passa a ser cobrada pelo estado onde o herdeiro/donatário for domiciliado no Brasil, segundo nova regra constitucional."
+      },
+      {
+        "id": 162,
+        "pergunta": "O que altera na cobrança do IPTU (Imposto Predial e Territorial Urbano)?",
+        "resposta": "Facilita a atualização da base de cálculo por decreto do Poder Executivo, respeitando critérios previstos em lei municipal."
+      },
+      {
+        "id": 163,
+        "pergunta": "Os prefeitos poderão atualizar a base de cálculo do IPTU por decreto (sem lei municipal específica)?",
+        "resposta": "Sim, desde que os critérios para revisão da Planta Genérica de Valores estejam previamente autorizados na legislação do município."
+      },
+      {
+        "id": 164,
+        "pergunta": "O que acontece com os regimes de incentivo à inovação técnica e tecnológica?",
+        "resposta": "Aproveitam do diferimento ou crédito presumido no âmbito do IVA Dual se enquadrados na regulamentação complementar."
+      },
+      {
+        "id": 165,
+        "pergunta": "O regime de drawback nas importações/exportações continuará funcionando da mesma forma?",
+        "resposta": "Será mantida a suspensão de CBS e IBS nas aquisições de insumos destinados estritamente a produtos de exportação."
+      },
+      {
+        "id": 166,
+        "pergunta": "O que é a Imunidade Tributária do IBS/CBS sobre livros, jornais e periódicos?",
+        "resposta": "Proteção constitucional mantida que veda a incidência do imposto sobre o papel e edições digitais de livros, jornais e periódicos."
+      },
+      {
+        "id": 167,
+        "pergunta": "Entidades religiosas e templos de qualquer culto possuem imunidade do IBS e da CBS?",
+        "resposta": "Sim, a imunidade para templos de qualquer culto foi mantida e ampliada para suas organizações assistenciais."
+      },
+      {
+        "id": 168,
+        "pergunta": "Como a reforma trata entidades sem fins lucrativos, OSs e ONGs em relação aos novos tributos?",
+        "resposta": "Possuem hipóteses de não incidência e isenção restritas às suas finalidades essenciais e assistenciais regulamentadas."
+      },
+      {
+        "id": 169,
+        "pergunta": "Qual é o tratamento dado ao setor de saneamento básico e gestão de resíduos sólidos?",
+        "resposta": "Conta com regimes de tributação favorecida para expandir a universalização dos serviços essenciais de água e esgoto."
+      },
+      {
+        "id": 170,
+        "pergunta": "Como funcionará o Regime Específico para Fundos de Investimento Imobiliário (FIIs)?",
+        "resposta": "Seguirá regramento de apuração diferenciado sem equiparação simplista a pessoas jurídicas ordinárias sobre suas receitas estritas."
+      },
+      {
+        "id": 171,
+        "pergunta": "Como ficam as Sociedades Anônimas do Futebol (SAFs) frente ao novo modelo de tributação?",
+        "resposta": "A legislação prevê a unificação da tributação específica (TEF - Tributação Específica do Futebol) compatível com o novo IVA Dual."
+      },
+      {
+        "id": 172,
+        "pergunta": "As operações de microcrédito e crédito popular terão tratamento favorecido?",
+        "resposta": "Sim, alíquotas zero ou reduzidas de CBS e IBS na concessão do crédito a microempreendedores de baixa renda."
+      },
+      {
+        "id": 173,
+        "pergunta": "Há imunidade ou isenção sobre compras feitas pela administração pública direta?",
+        "resposta": "É prevista a desoneração do IBS e da CBS nas aquisições e compras efetuadas por entes públicos da Administração Direta."
+      },
+      {
+        "id": 174,
+        "pergunta": "O que é a trava ambiental de incentivos fiscais?",
+        "resposta": "Exigência de cumprimento de metas de descarbonização e sustentabilidade para usufruto de privilégios fiscais no Imposto Seletivo."
+      },
+      {
+        "id": 175,
+        "pergunta": "Como fica a tributação das distribuidoras de energia e companhias de água?",
+        "resposta": "Incidência da alíquota padrão, com crédito integral garantido às empresas contratantes do setor produtivo."
+      },
+      {
+        "id": 176,
+        "pergunta": "Qual o regime aplicável à navegação de cabotagem e transporte hidroviário?",
+        "resposta": "Regime favorecido para incentivar o transporte de cargas por vias navegáveis brasileiras."
+      },
+      {
+        "id": 177,
+        "pergunta": "Como funcionam os Regimes Específicos para combustíveis e lubrificantes?",
+        "resposta": "Aplicação de cobrança única monofásica em alíquota fixa nacional sem cumulatividade comercial."
+      },
+      {
+        "id": 178,
+        "pergunta": "O que muda na tributação do patrimônio mantido por Holdings Familiares?",
+        "resposta": "Revisão das alíquotas de ITCMD e IPTU com maior rigor no enquadramento da transferência de bens a herdeiros."
+      },
+      {
+        "id": 179,
+        "pergunta": "A imunidade tributária sobre exportações abrange serviços prestados ao exterior?",
+        "resposta": "Sim, serviços prestados para tomadores no exterior com pagamento em moeda conversível são totalmente isentos de IBS e CBS."
+      },
+      {
+        "id": 180,
+        "pergunta": "O que acontece com a faturabilidade de autarquias e fundações públicas?",
+        "resposta": "Permanecem imunes na prestação de serviços vinculados diretamente às suas finalidades essenciais estatais."
+      }
+    ],
+    "modulo_7_gestao_empresarial_ti_precos_e_planejamento": [
+      {
+        "id": 181,
+        "pergunta": "Como a Reforma Tributária altera a formação do preço de venda de produtos e serviços?",
+        "resposta": "O imposto não compõe o preço (cálculo por fora), alterando o cálculo de margem de lucro operacional e preço final de tabela."
+      },
+      {
+        "id": 182,
+        "pergunta": "O que significa realizar o cálculo por dentro versus por fora na nova tributação?",
+        "resposta": "Por dentro: imposto integra sua própria base (ex: ICMS); Por fora: o imposto é calculado separadamente do valor real do produto (modelo IVA)."
+      },
+      {
+        "id": 183,
+        "pergunta": "As empresas precisarão rever contratos de fornecimento e prestação de serviços?",
+        "resposta": "Sim, para alinhar cláusulas de repasse fiscal, formação de preços de serviços recorrentes e direito ao aproveitamento de créditos."
+      },
+      {
+        "id": 184,
+        "pergunta": "Quais cláusulas tributárias devem ser inseridas em contratos de longo prazo?",
+        "resposta": "Cláusulas de reequilíbrio econômico-financeiro automático ajustadas à entrada gradual das alíquotas do IBS e da CBS."
+      },
+      {
+        "id": 185,
+        "pergunta": "Como as alterações na emissão da NF-e, NFS-e e CT-e impactam os sistemas ERP das empresas?",
+        "resposta": "Exigem parametrização imediata para gerar novas tags de cálculo de CBS, IBS, Imposto Seletivo e retenções do Split Payment."
+      },
+      {
+        "id": 186,
+        "pergunta": "Qual é o risco de ter cadastros de produtos (NCM/NBS) desatualizados na fase de transição?",
+        "resposta": "Risco de apuração incorreta da alíquota (zero, reduzida ou cheia), perda de créditos fiscais e penalidades operacionais."
+      },
+      {
+        "id": 187,
+        "pergunta": "Como a equipe de TI e desenvolvimento fiscal das empresas deve se estruturar?",
+        "resposta": "Capacitando equipes para atualizar regras de tributação dinâmicas nos sistemas ERP em sincronia com o Comitê Gestor."
+      },
+      {
+        "id": 188,
+        "pergunta": "Quais modificações precisam ser feitas no módulo de faturamento das empresas até 2026?",
+        "resposta": "Ajuste na lógica de emissão para destacar e apurar as alíquotas de teste de 0,9% (CBS) e 0,1% (IBS)."
+      },
+      {
+        "id": 189,
+        "pergunta": "O que muda no compliance fiscal e no envio das obrigações acessórias unificadas?",
+        "resposta": "Substituição do emaranhado de declarações municipais e estaduais por uma escrituração digital nacional padronizada."
+      },
+      {
+        "id": 190,
+        "pergunta": "Como simular o impacto no fluxo de caixa com a apuração não-cumulativa plena de compras e vendas?",
+        "resposta": "Calculando o saldo líquido mensal entre créditos auferidos em todas as aquisições e os débitos incidentes no faturamento de saídas."
+      },
+      {
+        "id": 191,
+        "pergunta": "Como identificar se uma empresa será 'ganhadora' ou 'perdedora' com a reforma?",
+        "resposta": "Ganhadoras: indústrias e exportadoras com alto custo de insumos tributados; Perdedoras: empresas de serviços B2C com poucas compras tributadas."
+      },
+      {
+        "id": 192,
+        "pergunta": "Empresas de margem baixa e alto custo de mão de obra direta pagarão mais tributos?",
+        "resposta": "Podem sofrer aumento na alíquota nominal, pois os salários pagos aos funcionários não geram crédito de IBS e CBS."
+      },
+      {
+        "id": 193,
+        "pergunta": "O custo de conformidade tributária (horas gastas para pagar impostos) vai diminuir no Brasil?",
+        "resposta": "Sim, a projeção é de redução drástica nas horas/ano dedicadas ao cumprimento de obrigações tributárias após o fim da transição."
+      },
+      {
+        "id": 194,
+        "pergunta": "Qual o papel do profissional de contabilidade no acompanhamento da transição da empresa?",
+        "resposta": "Atuação estratégica no replanejamento tributário, revisão de custos, parametrização dos sistemas ERP e treinamento de equipes."
+      },
+      {
+        "id": 195,
+        "pergunta": "Como reavaliar a localização geográfica de fábricas sem os benefícios fiscais estaduais (ex-ICMS)?",
+        "resposta": "A decisão logística passa a focar em proximidade de mercados consumidores e infraestrutura de escoamento, e não em guerra fiscal."
+      },
+      {
+        "id": 196,
+        "pergunta": "As empresas devem antecipar investimentos em imobilizado antes da entrada plena do IBS/CBS?",
+        "resposta": "Análises de viabilidade devem avaliar o ganho de crédito imediato e integral do ativo imobilizado garantido sob o novo regime de IVA."
+      },
+      {
+        "id": 197,
+        "pergunta": "Como fica a apuração de créditos sobre a folha de pagamento?",
+        "resposta": "Despesas diretas com salários e encargos trabalhistas não geram créditos de CBS e IBS."
+      },
+      {
+        "id": 198,
+        "pergunta": "Qual o impacto da reforma na avaliação de investimentos e Valuation das empresas brasileiras?",
+        "resposta": "Impacta as projeções do fluxo de caixa descontado, alterando as margens EBITDA operacionais dependendo do setor da empresa."
+      },
+      {
+        "id": 199,
+        "pergunta": "Como auditar se o fornecedor de fato recolheu o imposto para garantir o aproveitamento de crédito?",
+        "resposta": "A validação será garantida e automatizada pelos próprios registros eletrônicos de pagamento e liquidação pelo Split Payment."
+      },
+      {
+        "id": 200,
+        "pergunta": "O que muda para as empresas comerciais em relação ao estoque acumulado antes da transição?",
+        "resposta": "A legislação prevê procedimentos para inventariar estoques e garantir a transição dos créditos dos impostos antigos."
+      },
+      {
+        "id": 201,
+        "pergunta": "Como comunicar aos clientes os reajustes necessários de tabela de preços motivados pelo IVA?",
+        "resposta": "Demonstrando a transparência do cálculo por fora e demonstrando o valor líquido do bem sem a inclusão de tributos embutidos."
+      },
+      {
+        "id": 202,
+        "pergunta": "As empresas do Lucro Real continuarão com o mesmo modelo de apuração de IRPJ e CSLL?",
+        "resposta": "Sim, a Reforma Tributária aprovada foca na tributação do consumo, sem alterar pontualmente as regras de IRPJ e CSLL no Lucro Real."
+      },
+      {
+        "id": 203,
+        "pergunta": "Como fica o aproveitamento de créditos em bens de uso e consumo da empresa?",
+        "resposta": "Bens de uso e consumo geral passarão a creditar integralmente a CBS e o IBS, superando as travas do antigo ICMS."
+      },
+      {
+        "id": 204,
+        "pergunta": "O que fazer caso o sistema do governo falhe ao processar a nota fiscal com o Split Payment?",
+        "resposta": "Serão previstos regimes de contingência operacional e recolhimento diferido por guia padrão com acerto posterior no sistema."
+      },
+      {
+        "id": 205,
+        "pergunta": "Como preparar a governança corporativa e a gestão de riscos para a transição tributária?",
+        "resposta": "Criando comitês multifuncionais de transição unindo contabilidade, tecnologia da informação, suprimentos e setor jurídico."
+      },
+      {
+        "id": 206,
+        "pergunta": "Quais documentos e informações a empresa deve exigir de seus fornecedores para validação fiscal?",
+        "resposta": "Validação das NFs com identificação correta da alíquota do IVA e chave do Split Payment processada no arranjo bancário."
+      },
+      {
+        "id": 207,
+        "pergunta": "De que modo a reestruturação da logística interna pode otimizar a nova regra do imposto no destino?",
+        "resposta": "A logística pode ser descentralizada focando em velocidade de entrega, descartando rotas criadas unicamente para obter incentivos fiscais."
+      },
+      {
+        "id": 208,
+        "pergunta": "Como o departamento jurídico e tributário deve atuar preventivamente no contencioso do IBS/CBS?",
+        "resposta": "Monitorando a regulamentação do Comitê Gestor e ingressando com pedidos de alinhamento em caso de divergência de interpretação."
+      },
+      {
+        "id": 209,
+        "pergunta": "O que muda no processo de auditoria externa e demonstrativos financeiros (balanço patrimonial)?",
+        "resposta": "Revisão dos saldos ativamente contabilizados, teste de impairment de créditos acumulados de ICMS e adequação de notas explicativas."
+      },
+      {
+        "id": 210,
+        "pergunta": "Quais são os 3 primeiros passos práticos que qualquer empresa brasileira deve dar hoje para se adequar?",
+        "resposta": "1. Mapear e saneamento do cadastro de produtos/serviços; 2. Simular os cenários de preços e caixa no novo modelo; 3. Atualizar a tecnologia do ERP do faturamento."
+      }
+    ]
+  }
+}

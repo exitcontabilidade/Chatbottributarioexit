@@ -1,0 +1,53 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
+-- Legislação versionada
+CREATE TABLE normas (
+  id            SERIAL PRIMARY KEY,
+  sigla         TEXT NOT NULL,        -- 'LC 214/2025'
+  tipo          TEXT NOT NULL,        -- lei, decreto, IN, nota técnica
+  fonte_url     TEXT NOT NULL,
+  status        TEXT NOT NULL         -- vigente | revogada | em_tramitacao
+);
+
+CREATE TABLE trechos (
+  id               SERIAL PRIMARY KEY,
+  norma_id         INT REFERENCES normas(id),
+  referencia       TEXT NOT NULL,     -- 'art. 28, §2º'
+  texto            TEXT NOT NULL,
+  embedding        VECTOR(1024),
+  vigencia_inicio  DATE NOT NULL,
+  vigencia_fim     DATE,              -- NULL = em vigor
+  versao_base      INT NOT NULL,      -- qual publicação da base
+  data_captura     TIMESTAMP NOT NULL
+);
+
+-- Fila de atualização com revisão humana
+CREATE TABLE atualizacoes_pendentes (
+  id           SERIAL PRIMARY KEY,
+  fonte_url    TEXT,
+  diff         TEXT,
+  resumo_ia    TEXT,
+  status       TEXT DEFAULT 'pendente',  -- pendente | aprovada | rejeitada
+  revisado_por TEXT,
+  revisado_em  TIMESTAMP
+);
+
+-- Usuários e controle de custo
+CREATE TABLE usuarios (
+  id               SERIAL PRIMARY KEY,
+  email            TEXT UNIQUE NOT NULL,
+  cota_tokens_mes  INT DEFAULT 200000,
+  ativo            BOOLEAN DEFAULT TRUE
+);
+
+CREATE TABLE uso (
+  id             SERIAL PRIMARY KEY,
+  usuario_id     INT REFERENCES usuarios(id),
+  modelo         TEXT,
+  tokens_entrada INT,
+  tokens_saida   INT,
+  tokens_cache   INT,
+  custo_usd      NUMERIC(10,6),
+  versao_base    INT,                 -- auditoria: qual base respondeu
+  criado_em      TIMESTAMP DEFAULT now()
+);

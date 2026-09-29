@@ -1,0 +1,24 @@
+chatbot-reforma/
+├── app/
+│   ├── main.py              # FastAPI: rotas
+│   ├── config.py            # variáveis de ambiente (chaves, limites)
+│   ├── auth.py              # login / sessão
+│   ├── limites.py           # rate limit, cota por usuário, teto global
+│   ├── filtro.py            # classificador de assunto (Haiku)
+│   ├── rag.py               # busca vetorial + filtro de vigência
+│   ├── resposta.py          # montagem do prompt + chamada ao Sonnet
+│   ├── historico.py         # janela deslizante / resumo da conversa
+│   └── uso.py               # registro de tokens e custo
+├── ingestao/
+│   ├── fontes.py            # lista de fontes oficiais monitoradas
+│   ├── monitor.py           # detecta mudanças (hash / diff)
+│   ├── parser.py            # quebra por artigo, §, inciso
+│   ├── embeddings.py        # gera vetores
+│   └── publicar.py          # grava versão aprovada no banco
+├── admin/                   # painel de revisão das atualizações
+├── avaliacao/
+│   ├── perguntas.jsonl      # 30–50 perguntas com resposta esperada
+│   └── rodar_avaliacao.py   # mede acerto e custo por modelo
+├── sql/schema.sql
+├── .env                     # nunca versionar o .env real
+└── requirements.txt

@@ -1,0 +1,34 @@
+┌──────────────────────────── INTERNET ────────────────────────────┐
+│                                                                  │
+│  Usuários (clientes / equipe)          [Fase 2] WhatsApp (Meta)  │
+│        │ HTTPS                                   │ webhook       │
+└────────┼─────────────────────────────────────────┼───────────────┘
+         ▼                                         ▼
+┌──────────────────── BACKEND (Python / FastAPI) ──────────────────┐
+│  1. Autenticação ─► 2. Rate limit + cota ─► 3. Filtro de assunto │
+│                                               (Haiku 4.5)        │
+│                                                  │ no escopo     │
+│  4. Busca RAG (embeddings locais + filtro de vigência)           │
+│                                                  │               │
+│  5. Resposta (Sonnet 5) com citação de artigos + caching         │
+│                                                  │               │
+│  6. Registro de uso (tokens, custo, log)                         │
+└────────┬───────────────────────────────┬─────────────────────────┘
+         │ rede privada                  │ HTTPS (chave só aqui)
+         ▼                               ▼
+┌─────────────────────────┐      ┌──────────────────┐
+│ Postgres + pgvector     │      │  API Anthropic   │
+│ • trechos da legislação │      └──────────────────┘
+│ • versões / vigência    │
+│ • usuários / cotas      │
+│ • conversas / logs      │
+└────────▲────────────────┘
+         │ só após aprovação
+┌────────┴──────────── PIPELINE DE ATUALIZAÇÃO ────────────────────┐
+│  Job diário ─► Monitor de fontes oficiais ─► Diff ─► Fila         │
+│  (Planalto, DOU, RFB, CGIBS, Portal NF-e)                         │
+│                        ▼                                         │
+│         Painel admin: revisão humana (aprovar / rejeitar)         │
+│                        ▼                                         │
+│         Ingestão: quebra por artigo ─► embeddings ─► banco        │
+└──────────────────────────────────────────────────────────────────┘

@@ -1,0 +1,6 @@
+6. Fases
+Fase	          Escopo	Critério para avançar
+0 – Avaliação	  Base: LC 214 + EC 132. Script de avaliação com 30–50 perguntas	Taxa de acerto aceitável medida
+1 – MVP interno	  Portal com login, só a equipe do escritório, ingestão manual	Equipe usando sem erros graves por algumas semanas
+2 – Clientes	  Cotas, painel admin, monitor automático de fontes, política LGPD	Curadoria semanal funcionando
+3 – Expansão	  WhatsApp, notas técnicas, Soluções de Consulta	Demanda real comprovada

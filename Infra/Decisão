@@ -1,0 +1,45 @@
+IA
+GPT-4o mini (OpenAI)
+Custo: US$ 0,15 por 1 milhão de tokens de entrada + US$ 0,60 por 1 milhão de saída
+(~US$ 7,50 a cada 10 mil perguntas) - conferir preço atual e modelos mais novos
+
+Claude Haiku 4.5 (Anthropic)
+Mais caro (~US$ 55 a cada 10 mil perguntas), porém mais assertivo nas respostas
+Não tem embedding próprio, mas pode usar o embedding da OpenAI junto (US$ 0,02 por 1 milhão)
+Decisão: programar de forma que dê para trocar o modelo; testar os dois com perguntas reais
+
+Banco de Dados
+PostgreSQL + extensão pgvector (guarda os embeddings no próprio banco)
+Fica no servidor, com a porta fechada para a internet (só o servidor acessa)
+Backup automático guardado fora do servidor
+
+Servidor (necessário em qualquer formato)
+Guarda a chave da IA e a senha do banco no .env (nunca no computador do usuário)
+Faz o login, aplica os limites e registra o uso de cada usuário
+VPS na nuvem: ~R$ 30 a 100/mês
+
+Formato
+EXE = menos seguro se tiver as chaves dentro (mesmo em .env); só é seguro como "casca"
+      ligada ao servidor. Distribuição e atualização dificultadas; antivírus pode alertar
+WEB = domínio (~R$ 40/ano) + servidor; divulgação e atualização facilitadas;
+      mais seguro porque as chaves ficam só no servidor
+PWA = o site web instalado como aplicativo (ícone e janela própria, funciona no celular),
+      sem custo extra além da web
+WhatsApp = API oficial da Meta; acesso liberado só para números cadastrados
+      (o WhatsApp já identifica o número, não precisa de usuário e senha)
+Outras opções: Telegram, Teams, plataformas prontas (Open WebUI, LibreChat),
+      plano corporativo pronto (ChatGPT Business / Claude Team)
+
+Limites
+Teto de gasto mensal no painel da OpenAI/Anthropic (último recurso, não dá para burlar)
+Orçamento mensal da empresa controlado pelo sistema
+Limite por usuário de perguntas e tokens por dia, para não gastar o limite da empresa
+Limite de perguntas por minuto, para impedir bots maliciosos
+Tamanho máximo da pergunta e da resposta, para uma única pergunta não sair cara
+Contra DDoS: Cloudflare na frente do servidor + limite de acessos por IP
+      (o limite de perguntas por dia protege o custo, mas não impede DDoS)
+Registrar no banco cada pergunta: usuário, tokens gastos, custo e data
+
+Pendências
+LGPD: definir quais dados de clientes podem ser enviados para a IA
+Definir a base de conhecimento (documentos, legislação, procedimentos internos)
