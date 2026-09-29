@@ -1,7 +1,8 @@
 'use client';
 
 import { useMemo } from 'react';
-import { SquarePen, Trash2, X } from 'lucide-react';
+import { LogOut, SquarePen, Trash2, X } from 'lucide-react';
+import { logout } from '@/app/actions/auth';
 import { CONFIG } from '@/lib/config';
 import InstallButton from './InstallButton';
 import ThemeToggle from './ThemeToggle';
@@ -33,7 +34,12 @@ function groupByDate(conversations) {
   return groups;
 }
 
-export default function Sidebar({ open, onClose, conversations, activeId, onSelect, onNew, onDelete, online }) {
+function initials(name) {
+  const parts = String(name).trim().split(/\s+/);
+  return ((parts[0]?.[0] ?? '') + (parts.length > 1 ? parts.at(-1)[0] : '')).toUpperCase() || '?';
+}
+
+export default function Sidebar({ open, onClose, conversations, activeId, onSelect, onNew, onDelete, online, user }) {
   const groups = useMemo(() => groupByDate(conversations), [conversations]);
 
   return (
@@ -102,10 +108,23 @@ export default function Sidebar({ open, onClose, conversations, activeId, onSele
         <div className={styles.foot}>
           <InstallButton />
           <ThemeToggle />
-          <p className={styles.status}>
-            <span className={`${styles.dot} ${online ? '' : styles.offline}`} />
-            {online ? 'Online' : 'Sem conexão'}
-          </p>
+          <div className={styles.user}>
+            <span className={styles.userAvatar} aria-hidden="true">
+              {initials(user.name)}
+            </span>
+            <div className={styles.userText}>
+              <p className={styles.userName}>{user.name}</p>
+              <p className={styles.status}>
+                <span className={`${styles.dot} ${online ? '' : styles.offline}`} />
+                {online ? 'Online' : 'Sem conexão'}
+              </p>
+            </div>
+            <form action={logout}>
+              <button className={styles.logoutBtn} type="submit" aria-label="Sair" title="Sair">
+                <LogOut size={17} />
+              </button>
+            </form>
+          </div>
         </div>
       </aside>
     </>

@@ -6,7 +6,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
 
 export const metadata = {
-  title: CONFIG.botName,
+  title: { default: CONFIG.botName, template: `%s · ${CONFIG.botName}` },
   description: CONFIG.description,
   icons: {
     icon: { url: '/icons/icon.svg', type: 'image/svg+xml' },

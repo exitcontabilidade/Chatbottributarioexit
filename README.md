@@ -7,7 +7,8 @@ app (PWA) no celular ou no computador, mas instalar é opcional.
 Planejamento completo (fases, decisões, fluxo, banco): pasta [`Infra/`](Infra/).
 
 **Estado atual:** responde com as 210 perguntas cadastradas em `Perguntas/Perguntas.json`
-(modo `faq`, sem IA). Ainda não há login, banco, RAG nem IA.
+(modo `faq`, sem IA). Login de **demonstração** (usuário `Admin`, senha `123`). Ainda não há
+banco, RAG nem IA.
 
 ## Rodar
 
@@ -28,18 +29,35 @@ npm run build
 npm start
 ```
 
+## Login (demonstração)
+
+Entre com usuário **Admin** e senha **123** (o usuário aceita maiúsculas/minúsculas).
+
+- A senha é conferida no servidor (`lib/server/auth.js`), nunca no navegador.
+- Depois do login, a sessão fica num cookie `httpOnly` assinado (`lib/server/token.js`),
+  válido por 7 dias. "Sair" fica no rodapé da barra lateral.
+- `proxy.js` manda para `/login` quem não está logado; a página do chat e a `/api/chat`
+  conferem a sessão de novo antes de mostrar ou responder.
+- As conversas salvas no navegador são separadas por usuário.
+- Para a fase 1: trocar o usuário fixo de `lib/server/auth.js` por uma consulta à tabela de
+  usuários (senha em hash) e definir `CHATBOT_SESSION_SECRET` no servidor.
+
 ## Estrutura
 
 ```
 app/
   layout.js               HTML base, título, ícones, cores do tema
-  page.js                 página do chat
+  page.js                 página do chat (só para quem está logado)
+  login/page.js           tela de login
+  actions/auth.js         logout (Server Action)
   globals.css             visual (tema claro/escuro automático)
   manifest.js             dados do PWA (/manifest.webmanifest)
+  api/auth/login/route.js POST /api/auth/login
   api/chat/route.js       POST /api/chat
   api/status/route.js     GET /api/status
 components/               tela em React (cada um com seu .module.css)
   ChatApp.js              estrutura: barra lateral + chat, envio das mensagens
+  LoginForm.js            formulário de login
   Sidebar.js              histórico de conversas (vira gaveta abaixo de 1024px), tema, instalar
   Welcome.js              tela inicial com cartões de perguntas
   MessageList.js          mensagens, "digitando…", perguntas relacionadas, botão "ir para o fim"
@@ -55,10 +73,13 @@ lib/
   storage.js              leitura/gravação das conversas no localStorage
   server/                 só roda no servidor (nunca vai para o navegador)
     settings.js           variáveis de ambiente (CHATBOT_*)
+    auth.js               confere usuário e senha (hoje: usuário de demonstração)
+    token.js, session.js  cookie de sessão assinado
     validation.js         confere o que chega em /api/chat
     responder.js          escolhe quem responde: faq ou mock (a IA entra aqui)
     faq.js                responde com as perguntas do JSON
     mock.js               respostas simuladas, para testar a tela
+proxy.js                  redireciona para /login quem não está logado
 public/                   ícones, service worker (sw.js)
 Perguntas/Perguntas.json  perguntas e respostas que o bot sabe responder
 ```
@@ -107,7 +128,14 @@ POST /api/chat          (Content-Type: application/json)
 
 GET /api/status
 -> { "status": "ok", "demo": false }
+
+POST /api/auth/login    (Content-Type: application/json)
+{ "username": "Admin", "password": "123" }
+-> 200 { "ok": true } + cookie de sessão
+-> 400 faltou usuário ou senha · 401 usuário ou senha incorretos
 ```
+
+- Sem sessão, `/api/chat` responde **401** (com `WWW-Authenticate`, como pede a RFC 9110).
 
 - `sources` vem dos metadados, nunca do texto gerado pela IA (Infra/Infra, item 2).
 - A tela mostra o aviso fixo "Informação baseada na legislação; não substitui a análise do
@@ -125,7 +153,7 @@ ele vá parar no navegador por engano).
 ## Antes de abrir para os clientes
 
 - [ ] HTTPS
-- [ ] Login; a API só responde a quem está autenticado
+- [ ] Login real: usuários no banco com senha em hash, limite de tentativas, `CHATBOT_SESSION_SECRET` definido
 - [ ] Limites por usuário (mensagens por minuto, tokens por dia) e teto de gasto (Infra/Decisão)
 - [ ] CSP completa com nonce nos scripts (hoje só há as regras que não dependem de nonce)
 - [ ] Conversas e uso registrados no banco; política de retenção e aviso de privacidade (LGPD)

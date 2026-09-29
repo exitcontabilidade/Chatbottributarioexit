@@ -18,8 +18,8 @@ function errorText(err) {
   return 'Não consegui obter uma resposta agora. Tente novamente em instantes.';
 }
 
-export default function ChatApp() {
-  const { ready, active, conversations, update, select, startNew, remove } = useConversations();
+export default function ChatApp({ user }) {
+  const { ready, active, conversations, update, select, startNew, remove } = useConversations(user.id);
 
   // Conversas esperando resposta: { [id]: true }. O ref permite decidir fora da renderização.
   const [pending, setPending] = useState({});
@@ -75,6 +75,10 @@ export default function ChatApp() {
       const reply = makeMessage('assistant', res.reply, { sources: res.sources });
       update(conv.id, (c) => ({ ...c, messages: [...c.messages, reply], suggestions: res.suggestions }));
     } catch (err) {
+      if (err?.status === 401) {
+        window.location.assign('/login'); // sessão expirou: entrar de novo
+        return;
+      }
       console.error('Falha ao obter resposta:', err);
       const failure = makeMessage('assistant', errorText(err), { error: true, retryText: text });
       update(conv.id, (c) => ({ ...c, messages: [...c.messages, failure] }));
@@ -131,6 +135,7 @@ export default function ChatApp() {
         onNew={newChat}
         onDelete={deleteConversation}
         online={online}
+        user={user}
       />
 
       <main className={styles.main}>

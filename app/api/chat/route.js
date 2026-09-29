@@ -1,10 +1,12 @@
 import { getResponder } from '@/lib/server/responder';
+import { getSession, unauthorized } from '@/lib/server/session';
 import { parseChatRequest, ValidationError } from '@/lib/server/validation';
 
 const MAX_BODY_BYTES = 1_000_000;
 
 // POST /api/chat — contrato em lib/api.js
 export async function POST(request) {
+  if (!(await getSession())) return unauthorized('Faça login para continuar.');
   // Só JSON: impede que outro site envie mensagens por um formulário comum.
   if (!request.headers.get('content-type')?.includes('application/json')) {
     return Response.json({ detail: 'Envie os dados como JSON.' }, { status: 415 });

@@ -35,14 +35,14 @@ function toStored({ activeId, conversations }) {
 }
 
 /**
- * Conversas do usuário, salvas no navegador.
+ * Conversas do usuário, salvas no navegador (separadas por usuário).
  * `store` é null até ler o localStorage (só existe no cliente).
  */
-export function useConversations() {
+export function useConversations(userId) {
   const [store, setStore] = useState(null);
 
   useEffect(() => {
-    const loaded = loadStore();
+    const loaded = loadStore(userId);
     const lastActive = loaded?.conversations.find((c) => c.id === loaded.activeId);
     if (loaded && lastActive) {
       setStore(loaded);
@@ -50,11 +50,11 @@ export function useConversations() {
       const fresh = emptyConversation();
       setStore({ activeId: fresh.id, conversations: [fresh, ...(loaded?.conversations ?? [])] });
     }
-  }, []);
+  }, [userId]);
 
   useEffect(() => {
-    if (store) saveStore(toStored(store));
-  }, [store]);
+    if (store) saveStore(userId, toStored(store));
+  }, [store, userId]);
 
   /** Altera uma conversa pelo id (se ela ainda existir). */
   const update = useCallback((id, change) => {

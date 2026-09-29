@@ -1,0 +1,188 @@
+/* Computador: painel de apresentação à esquerda + formulário. Celular: só o formulário. */
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--bg);
+}
+
+@media (min-width: 900px) {
+  .page { grid-template-columns: minmax(380px, 5fr) 6fr; }
+}
+
+/* ---------- Painel de apresentação ---------- */
+
+.hero { display: none; }
+
+@media (min-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 48px;
+    overflow: hidden;
+    color: #fff;
+    background:
+      radial-gradient(circle at 15% 10%, rgba(120, 150, 255, 0.55), transparent 45%),
+      radial-gradient(circle at 90% 95%, rgba(20, 40, 140, 0.7), transparent 50%),
+      linear-gradient(150deg, #2f5bea, #1f3fae);
+  }
+}
+
+.heroBrand { display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 600; }
+.heroBrand img { border-radius: 11px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35); }
+
+.headline {
+  max-width: 460px;
+  margin: 0 0 32px;
+  font-size: clamp(26px, 2.6vw, 36px);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.features { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.features li { display: flex; align-items: center; gap: 12px; color: rgba(255, 255, 255, 0.92); }
+
+.featureIcon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.heroFoot { margin: 0; color: rgba(255, 255, 255, 0.7); font-size: 13px; letter-spacing: 0.02em; }
+
+/* ---------- Formulário ---------- */
+
+.formSide {
+  display: flex;
+  overflow-y: auto;
+  padding: calc(32px + env(safe-area-inset-top)) max(20px, env(safe-area-inset-right))
+    calc(32px + env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  animation: fade-up 0.3s ease-out;
+}
+
+.mobileBrand { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+.mobileBrand img { border-radius: 11px; }
+.mobileName { margin: 0; font-weight: 600; line-height: 1.25; }
+.mobileTag { margin: 0; color: var(--muted); font-size: 13px; }
+
+@media (min-width: 900px) {
+  .mobileBrand { display: none; }
+}
+
+.title { margin: 0 0 6px; font-size: 28px; font-weight: 650; letter-spacing: -0.02em; }
+.subtitle { margin: 0 0 28px; color: var(--muted); }
+
+.field { display: grid; gap: 6px; margin-bottom: 16px; }
+.label { color: var(--text-2); font-size: 13.5px; font-weight: 500; }
+
+.control { position: relative; display: flex; align-items: center; }
+
+.leadingIcon { position: absolute; left: 14px; color: var(--muted); pointer-events: none; }
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px 0 42px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 16px; /* 16px evita o zoom automático do iPhone ao focar */
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.input[aria-invalid='true'] { border-color: var(--danger); }
+.withToggle { padding-right: 48px; }
+
+/* Preenchimento automático do navegador sem o fundo amarelo/azul */
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--surface) inset;
+  -webkit-text-fill-color: var(--text);
+}
+
+.toggle {
+  position: absolute;
+  right: 6px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.toggle:hover { background: var(--surface-2); color: var(--text); }
+
+.caps { margin: 2px 0 0; color: var(--warning); font-size: 12.5px; }
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--danger) 25%, transparent);
+  border-radius: 12px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 14px;
+  animation: fade-up 0.2s ease-out;
+}
+.error svg { flex: none; }
+
+.submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--accent-solid);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.submit:hover:not(:disabled) { background: var(--accent-solid-hover); }
+.submit:active:not(:disabled) { transform: scale(0.99); }
+.submit:disabled { opacity: 0.75; cursor: default; }
+
+.spin { animation: spin 0.9s linear infinite; }
+
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
