@@ -1,9 +1,10 @@
 import { Inter } from 'next/font/google';
-import ServiceWorker from '@/components/ServiceWorker';
+import ServiceWorker from '@/components/pwa/ServiceWorker';
 import { CONFIG } from '@/lib/config';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
+// A fonte vira a variável --font-inter, usada pelo Tailwind em app/globals.css (font-sans).
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 
 export const metadata = {
   title: { default: CONFIG.botName, template: `%s · ${CONFIG.botName}` },
@@ -22,7 +23,7 @@ export const viewport = {
   interactiveWidget: 'resizes-content', // no Android, o teclado encolhe a tela em vez de cobrir o campo
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#111317' },
+    { media: '(prefers-color-scheme: dark)', color: '#0f1115' },
   ],
 };
 
@@ -36,7 +37,7 @@ window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();win
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={inter.variable} suppressHydrationWarning>
+    <html lang="pt-BR" className={`${inter.variable} font-sans`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: EARLY_SCRIPT }} />
       </head>

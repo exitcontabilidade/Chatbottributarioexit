@@ -15,6 +15,12 @@ const securityHeaders = [
 const nextConfig = {
   poweredByHeader: false,
 
+  // As perguntas são lidas do disco em tempo de execução: garante que a pasta vá junto no deploy.
+  outputFileTracingIncludes: {
+    '/': ['./Perguntas/**/*.json'],
+    '/api/chat': ['./Perguntas/**/*.json'],
+  },
+
   async headers() {
     return [
       { source: '/(.*)', headers: securityHeaders },

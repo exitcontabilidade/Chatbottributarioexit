@@ -1,16 +1,19 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Menu, SquarePen } from 'lucide-react';
 import { makeMessage, useConversations } from '@/hooks/useConversations';
 import { getStatus, sendMessage } from '@/lib/api';
 import { CONFIG } from '@/lib/config';
 import { titleFrom } from '@/lib/storage';
+import ChatHeader from './ChatHeader';
 import Composer from './Composer';
+import HelpDialog from './HelpDialog';
 import MessageList from './MessageList';
 import Sidebar from './Sidebar';
+import TopicsDialog from './TopicsDialog';
 import Welcome from './Welcome';
-import styles from './ChatApp.module.css';
+
+const HELP_SEEN_KEY = 'chatbot:ajuda-vista';
 
 function errorText(err) {
   if (!navigator.onLine) return 'Sem conexão com a internet. Verifique sua rede e tente novamente.';
@@ -18,7 +21,11 @@ function errorText(err) {
   return 'Não consegui obter uma resposta agora. Tente novamente em instantes.';
 }
 
-export default function ChatApp({ user }) {
+/**
+ * Tela principal do chat. Guarda o estado (conversas, janelas abertas, envio) e
+ * distribui para os componentes: Sidebar, ChatHeader, Welcome/MessageList e Composer.
+ */
+export default function ChatApp({ user, topics }) {
   const { ready, active, conversations, update, select, startNew, remove } = useConversations(user.id);
 
   // Conversas esperando resposta: { [id]: true }. O ref permite decidir fora da renderização.
@@ -26,6 +33,8 @@ export default function ChatApp({ user }) {
   const pendingRef = useRef({});
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [topicsDialog, setTopicsDialog] = useState({ open: false, topic: null });
+  const [helpOpen, setHelpOpen] = useState(false);
   const [demo, setDemo] = useState(false);
   const [online, setOnline] = useState(true);
 
@@ -33,6 +42,16 @@ export default function ChatApp({ user }) {
     getStatus()
       .then((status) => setDemo(Boolean(status?.demo)))
       .catch(() => {}); // servidor fora do ar: o erro aparece ao enviar a primeira mensagem
+
+    // Na primeira visita, mostra o "Como funciona".
+    try {
+      if (!localStorage.getItem(HELP_SEEN_KEY)) {
+        setHelpOpen(true);
+        localStorage.setItem(HELP_SEEN_KEY, '1');
+      }
+    } catch {
+      // storage bloqueado: não mostra automaticamente
+    }
 
     const updateOnline = () => setOnline(navigator.onLine);
     updateOnline();
@@ -72,7 +91,7 @@ export default function ChatApp({ user }) {
     try {
       const res = await sendMessage({ conversationId: conv.id, message: text, history });
       // `sources` também marca a mensagem como resposta da API (recebe o aviso fixo).
-      const reply = makeMessage('assistant', res.reply, { sources: res.sources });
+      const reply = makeMessage('assistant', res.reply, { title: res.title, note: res.note, sources: res.sources });
       update(conv.id, (c) => ({ ...c, messages: [...c.messages, reply], suggestions: res.suggestions }));
     } catch (err) {
       if (err?.status === 401) {
@@ -121,11 +140,12 @@ export default function ChatApp({ user }) {
     if (window.confirm(`Apagar a conversa "${conv.title || 'sem título'}"?`)) remove(conv.id);
   }
 
+  const openTopics = (topic = null) => setTopicsDialog({ open: true, topic });
   const isPending = Boolean(active && pending[active.id]);
   const isEmpty = ready && active?.messages.length === 0;
 
   return (
-    <div className={styles.shell}>
+    <div className="flex h-dvh bg-bg">
       <Sidebar
         open={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
@@ -138,43 +158,49 @@ export default function ChatApp({ user }) {
         user={user}
       />
 
-      <main className={styles.main}>
-        <header className={styles.topbar}>
-          <button
-            className={`${styles.iconBtn} ${styles.mobileOnly}`}
-            type="button"
-            aria-label="Abrir conversas"
-            aria-expanded={sidebarOpen}
-            onClick={() => setSidebarOpen(true)}
-          >
-            <Menu size={20} />
-          </button>
-          <h1 className={styles.title}>{active?.title || 'Nova conversa'}</h1>
-          {demo && (
-            <span className={styles.badge} title="Respostas simuladas pelo servidor (modo demonstração)">
-              Demo
-            </span>
-          )}
-          <button
-            className={`${styles.iconBtn} ${styles.mobileOnly}`}
-            type="button"
-            aria-label="Nova conversa"
-            onClick={newChat}
-          >
-            <SquarePen size={20} />
-          </button>
-        </header>
+      <main className="relative flex min-w-0 flex-1 flex-col">
+        <ChatHeader
+          title={active?.title || 'Nova conversa'}
+          demo={demo}
+          sidebarOpen={sidebarOpen}
+          onOpenSidebar={() => setSidebarOpen(true)}
+          onNewChat={newChat}
+          onOpenTopics={() => openTopics()}
+          onOpenHelp={() => setHelpOpen(true)}
+        />
 
         {!ready ? (
-          <div className={styles.placeholder} />
+          <LoadingSkeleton />
         ) : isEmpty ? (
-          <Welcome onPick={send} />
+          <Welcome userName={user.name} topics={topics} onPick={send} onOpenTopic={openTopics} onOpenHelp={() => setHelpOpen(true)} />
         ) : (
           <MessageList conversation={active} pending={isPending} onRetry={retry} onPick={send} />
         )}
 
-        <Composer busy={isPending} onSend={send} focusKey={active?.id} />
+        <Composer busy={isPending} onSend={send} onOpenTopics={() => openTopics()} focusKey={active?.id} />
       </main>
+
+      <TopicsDialog
+        topics={topics}
+        open={topicsDialog.open}
+        initialTopic={topicsDialog.topic}
+        onClose={() => setTopicsDialog((d) => ({ ...d, open: false }))}
+        onPick={send}
+      />
+      <HelpDialog open={helpOpen} onClose={() => setHelpOpen(false)} />
+    </div>
+  );
+}
+
+/** Enquanto lê as conversas salvas no navegador. */
+function LoadingSkeleton() {
+  return (
+    <div className="mx-auto w-full max-w-3xl flex-1 space-y-6 px-4 pt-8 sm:px-6" aria-hidden="true">
+      <div className="ml-auto h-10 w-2/5 animate-pulse rounded-3xl bg-surface-2" />
+      <div className="flex gap-3">
+        <div className="size-8 animate-pulse rounded-lg bg-surface-2" />
+        <div className="h-28 flex-1 animate-pulse rounded-2xl bg-surface-2" />
+      </div>
     </div>
   );
 }

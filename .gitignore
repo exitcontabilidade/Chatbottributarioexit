@@ -4,6 +4,9 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 
+# texto das leis baixado por `npm run leis` (conferência das perguntas)
+.leis/
+
 # segredos (chave da IA, senha do banco)
 .env
 .env*.local

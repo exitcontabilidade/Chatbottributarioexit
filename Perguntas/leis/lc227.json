@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "temas": {
+      "lc227_t1": {
+        "title": "Título I — Comitê Gestor do IBS (CGIBS)",
+        "short": "Tít. I · CGIBS",
+        "grupo": "lc227"
+      },
+      "lc227_t2": {
+        "title": "Título II — Processo administrativo tributário do IBS",
+        "short": "Tít. II · Processo",
+        "grupo": "lc227"
+      },
+      "lc227_t3": {
+        "title": "Título III — Distribuição da arrecadação do IBS",
+        "short": "Tít. III · Distribuição",
+        "grupo": "lc227"
+      },
+      "lc227_t4": {
+        "title": "Título IV — Transição do ICMS",
+        "short": "Tít. IV · Transição do ICMS",
+        "grupo": "lc227"
+      },
+      "lc227_l2": {
+        "title": "Livro II — ITCMD",
+        "short": "Livro II · ITCMD",
+        "grupo": "lc227"
+      },
+      "lc227_l3": {
+        "title": "Livro III — Disposições finais",
+        "short": "Livro III · Finais",
+        "grupo": "lc227"
+      }
+    },
+    "modulos": {
+      "lc227_01_comite_gestor_e_fiscalizacao": {
+        "title": "CGIBS, fiscalização e cobrança",
+        "description": "Como o Comitê Gestor atua e como o IBS é fiscalizado e cobrado",
+        "icon": "briefcase",
+        "tone": "emerald"
+      }
+    }
+  },
+  "lc227_t1": {
+    "lc227_01_comite_gestor_e_fiscalizacao": [
+      {
+        "id": "lc227-01",
+        "pergunta": "O que é o CGIBS (Comitê Gestor do IBS) e como ele foi criado?",
+        "resposta": "O **CGIBS** foi instituído pela LC 227/2026 (art. 1º) como **entidade pública com caráter técnico e operacional, sob regime especial**, com **sede e foro no Distrito Federal** e **independência técnica, administrativa, orçamentária e financeira**. Sua função é administrar a competência compartilhada do **IBS**.\n\nNos termos da Constituição e da lei, o CGIBS:\n- **define as diretrizes** e **coordena**, de forma integrada, a atuação das administrações tributárias e das Procuradorias dos Estados, do Distrito Federal e dos Municípios, observadas as competências de cada uma;\n- atua **sem vinculação, tutela ou subordinação hierárquica** a qualquer órgão da administração pública.",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 1º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art1",
+            "lei": "lcp227",
+            "artigos": [
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-02",
+        "pergunta": "Quais são as competências do CGIBS?",
+        "resposta": "Estados, Distrito Federal e Municípios exercem, **de forma integrada e exclusivamente por meio do CGIBS**, as seguintes competências relativas ao IBS (art. 2º):\n- editar o **regulamento único** e uniformizar a interpretação e a aplicação da legislação do imposto;\n- **arrecadar** o imposto, efetuar as compensações, realizar as retenções previstas na legislação e **distribuir** o produto da arrecadação;\n- decidir o **contencioso administrativo**.\n\nAlém disso (art. 2º, § 1º), compete ao CGIBS, entre outras coisas: harmonizar normas e procedimentos com o Poder Executivo federal; compartilhar informações com a Receita Federal e a PGFN; disciplinar o regime especial de fiscalização; **coordenar** a fiscalização, o lançamento, a cobrança e a representação relativos ao IBS; promover a inscrição em dívida ativa quando houver delegação; e calcular e divulgar, junto com a Receita Federal, as alíquotas do IBS e da CBS nos regimes específicos.",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 2º, caput e § 1º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art2",
+            "lei": "lcp227",
+            "artigos": [
+              "2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-03",
+        "pergunta": "Quem cria as obrigações acessórias do IBS e como são aprovadas as normas comuns ao IBS e à CBS?",
+        "resposta": "- **Obrigações acessórias do IBS:** cabe **exclusivamente ao CGIBS** a criação (art. 2º, § 8º).\n- **Regras comuns ao IBS e à CBS:** as normas comuns constantes do regulamento único do IBS são aprovadas por **ato conjunto do CGIBS e do Poder Executivo federal** (art. 2º, § 11).\n- O regulamento único do IBS preverá regras uniformes de **conformidade tributária, orientação e autorregularização**, além de tratamento diferenciado para contribuintes que atendam a programas de conformidade (art. 2º, § 12).",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 2º, § 8º, § 11 e § 12",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art2",
+            "lei": "lcp227",
+            "artigos": [
+              "2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-04",
+        "pergunta": "O CGIBS e a Receita Federal atuam de forma integrada?",
+        "resposta": "Sim. O art. 2º, § 1º, da LC 227/2026 determina que o CGIBS:\n- atue com o Poder Executivo federal para **harmonizar normas, interpretações, obrigações acessórias e procedimentos** relativos às regras comuns do IBS e da CBS (inciso I);\n- **compartilhe informações** de interesse fiscal e de cobrança do IBS e da CBS com a **Receita Federal (RFB)** e a **PGFN**, de modo cooperativo e recíproco (inciso II);\n- exerça, **em conjunto com a RFB**, a gestão do sistema de registro do início e do resultado das fiscalizações do IBS e da CBS (inciso III).\n\nO art. 2º, § 7º, permite ao CGIBS, à RFB e à PGFN implementar **soluções integradas** para a administração e a cobrança do IBS e da CBS.",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 2º, § 1º, I a III, e § 7º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art2",
+            "lei": "lcp227",
+            "artigos": [
+              "2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-05",
+        "pergunta": "Quem pode fiscalizar o IBS de uma empresa: qualquer Estado ou Município?",
+        "resposta": "As administrações tributárias dos Estados, do Distrito Federal e dos Municípios podem fiscalizar os sujeitos passivos situados (art. 3º):\n- no **seu território**, ainda que realizem operações destinadas a outros entes federativos;\n- em **qualquer localidade**, quando realizem operações **destinadas ao seu território**, ou **por delegação** do ente com competência para fiscalizá-los.\n\nIsso também vale quando houver **indícios** de operações destinadas aos entes, nos termos do regulamento (§ 1º).\n\nOs entes **registram o interesse** em fiscalizar em sistema eletrônico, indicando o sujeito passivo, o tipo de operação, o período e os motivos (§§ 2º e 3º).",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 3º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art3",
+            "lei": "lcp227",
+            "artigos": [
+              "3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-06",
+        "pergunta": "Como é definido quem conduz a fiscalização do IBS quando há vários entes interessados?",
+        "resposta": "Se dois ou mais entes têm interesse em fiscalizar o mesmo sujeito passivo, no mesmo período e sobre os mesmos fatos geradores, o procedimento é **conjunto e integrado**, e cabe ao CGIBS disciplinar a organização dos trabalhos, o rateio dos custos e a distribuição das multas e juros (art. 4º, § 2º).\n\nSegundo o art. 4º, § 3º:\n- em cada procedimento há **uma administração titular e uma cotitular**, de esferas federativas diversas (com exceções, como o caso do Distrito Federal);\n- as demais que se habilitarem são **participantes**, e considera-se havida a **delegação** para titular e cotitular fazerem o lançamento;\n- quem não se habilitar **presume-se ter delegado**, salvo manifestação em contrário no prazo regulamentar;\n- o **lançamento** é feito pelo **somatório das alíquotas** do Município e do Estado de destino, com créditos tributários **individualizados por ente**;\n- o **contribuinte é informado** da abertura da fiscalização e de quem são a titular e a cotitular.",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 4º, § 2º e § 3º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art4",
+            "lei": "lcp227",
+            "artigos": [
+              "4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-07",
+        "pergunta": "A fiscalização do IBS pode ser dividida por tipo de empresa ou por atividade econômica?",
+        "resposta": "Não. O art. 4º da LC 227/2026 manda o CGIBS coordenar a fiscalização do IBS de forma integrada, e **veda a segregação da fiscalização entre esferas federativas** por **atividade econômica, porte do sujeito passivo ou qualquer outro critério**.\n\nEssas atividades são exercidas **exclusivamente por autoridades fiscais** das administrações tributárias dos Estados, do Distrito Federal e dos Municípios (art. 4º, § 5º). Considera-se autoridade fiscal o **servidor ocupante de cargo efetivo** de carreira específica instituída em lei, com competência cumulativa para fiscalizar e para constituir o crédito tributário (art. 4º, § 8º).",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 4º, caput, § 5º e § 8º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art4",
+            "lei": "lcp227",
+            "artigos": [
+              "4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-08",
+        "pergunta": "De quem são as multas e os juros cobrados na fiscalização do IBS?",
+        "resposta": "O valor do crédito tributário do IBS correspondente à **multa punitiva** e aos **juros de mora sobre ela** pertence aos **entes federativos que promoverem a fiscalização** (art. 4º, § 1º).\n\nSe houver **convênio de delegação recíproca** de fiscalização do IBS e da CBS nos processos fiscais de **pequeno valor** (art. 326 da LC 214/2025), a União não participa da distribuição das multas e juros do IBS, e Estados, Distrito Federal e Municípios não participam da distribuição das multas e juros da CBS (art. 4º, § 7º).",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 4º, § 1º e § 7º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art4",
+            "lei": "lcp227",
+            "artigos": [
+              "4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-09",
+        "pergunta": "Quem faz a cobrança do IBS: administrações tributárias ou procuradorias?",
+        "resposta": "O CGIBS **coordena** a cobrança e a representação, mas quem executa é (art. 5º):\n- **cobrança administrativa e representação administrativa:** servidores efetivos das carreiras das **administrações tributárias** dos Estados, do Distrito Federal e dos Municípios (§ 1º);\n- **cobrança extrajudicial e judicial e representação judicial:** servidores efetivos da carreira de **procurador**, instituída em lei estadual, distrital ou municipal (§ 2º);\n- se o Município **não tiver procuradoria**, essas atividades seguem a legislação específica do Município (§ 3º).\n\nAs atividades de cobrança e representação podem ser **delegadas** entre os entes, observadas as diretrizes de coordenação do CGIBS; nesse caso o ente delegatário atua em nome dos delegantes (§ 4º).",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 5º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art5",
+            "lei": "lcp227",
+            "artigos": [
+              "5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-10",
+        "pergunta": "Qual é o prazo da cobrança administrativa do IBS antes de ir para a procuradoria?",
+        "resposta": "O **regulamento único do IBS** define o prazo máximo para as atividades de **cobrança administrativa**, que **não pode ser superior a 12 meses**, contados da **constituição definitiva do crédito tributário** (art. 2º, § 4º).\n\nEsgotado esse prazo, a administração tributária **encaminha o expediente à respectiva procuradoria** para as providências de cobrança **judicial ou extrajudicial**, nos termos do regulamento único (art. 2º, § 5º).\n\nAs inscrições em **dívida ativa** são controladas de forma centralizada pelo CGIBS, mediante sistema único, mas realizadas segundo a legislação de cada ente titular da parcela do crédito (art. 2º, § 3º).",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 2º, § 3º a § 5º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art2",
+            "lei": "lcp227",
+            "artigos": [
+              "2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lc227-11",
+        "pergunta": "As regras de fiscalização e cobrança do IBS valem também para quem está no Simples Nacional?",
+        "resposta": "Sim. O art. 6º da LC 227/2026 estabelece que as regras dos **arts. 3º a 5º** (fiscalização, coordenação e cobrança do IBS) aplicam-se também aos **créditos tributários relativos ao IBS cuja apuração esteja submetida ao Simples Nacional** (Lei Complementar nº 123/2006).",
+        "fontes": [
+          {
+            "norma": "LC 227/2026",
+            "referencia": "art. 6º",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm#art6",
+            "lei": "lcp227",
+            "artigos": [
+              "6"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

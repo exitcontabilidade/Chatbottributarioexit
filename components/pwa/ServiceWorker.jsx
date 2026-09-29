@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-// Registra o service worker (public/sw.js) só em produção (npm run build + npm start).
+// Registra o service worker (public/sw.js) só em produção (npm run build + npm start, ou Vercel).
 // Em desenvolvimento ele atrapalharia a atualização automática da tela, então é removido.
 export default function ServiceWorker() {
   useEffect(() => {

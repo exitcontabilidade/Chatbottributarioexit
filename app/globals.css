@@ -1,163 +1,236 @@
-/* ---------- Tokens (tema claro / escuro) ----------
-   Tema escuro: automático pelo sistema, ou forçado por data-theme no <html> (components/ThemeToggle.js). */
+@import 'tailwindcss';
+
+/* ============================================================================
+   Tema claro / escuro
+   ----------------------------------------------------------------------------
+   As cores ficam em variáveis (--ui-*) que mudam sozinhas com o tema. As classes
+   do Tailwind usam essas variáveis (bg-surface, text-muted, border-line...), então
+   os componentes não precisam de "dark:" na maioria dos casos.
+   O tema escuro vem do sistema, ou é forçado por data-theme no <html>
+   (components/ui/ThemeToggle.jsx).
+   ========================================================================== */
+
+/* "dark:" do Tailwind segue a mesma regra (sistema ou escolha manual). */
+@custom-variant dark {
+  &:where([data-theme='dark'], [data-theme='dark'] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme='light']), :root:not([data-theme='light']) *) {
+      @slot;
+    }
+  }
+}
 
 :root {
-  --bg: #ffffff;
-  --bg-subtle: #f7f7f8;
-  --surface: #ffffff;
-  --surface-2: #f3f4f6;
-  --surface-3: #e9ebef;
-  --border: #e5e7eb;
-  --border-strong: #d1d5db;
-  --text: #111827;
-  --text-2: #374151;
-  --muted: #6b7280;
-  --accent: #2f5bea;
-  --accent-solid: #2f5bea;
-  --accent-solid-hover: #2449c7;
-  --accent-soft: #eef2ff;
-  --success: #16a34a;
-  --danger: #b42318;
-  --danger-soft: #fef3f2;
-  --warning: #92400e;
-  --warning-soft: #fef3c7;
-  --code-bg: rgba(15, 23, 42, 0.06);
-  --overlay: rgba(17, 24, 39, 0.45);
-  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
-  --shadow-md: 0 4px 16px rgba(16, 24, 40, 0.08), 0 1px 3px rgba(16, 24, 40, 0.06);
-  --shadow-lg: 0 16px 48px rgba(16, 24, 40, 0.18);
+  --ui-bg: #ffffff;
+  --ui-bg-subtle: #f6f7f9;
+  --ui-surface: #ffffff;
+  --ui-surface-2: #f2f4f7;
+  --ui-surface-3: #e8ebf0;
+  --ui-border: #e4e7ec;
+  --ui-border-strong: #cfd4dc;
+  --ui-text: #101828;
+  --ui-text-2: #344054;
+  --ui-muted: #667085;
+  --ui-accent: #2f5bea;
+  --ui-accent-soft: #eef2ff;
+  --ui-success: #12b76a;
+  --ui-danger: #d92d20;
+  --ui-danger-soft: #fef3f2;
+  --ui-warning: #b54708;
+  --ui-warning-soft: #fffaeb;
+  --ui-code-bg: rgba(16, 24, 40, 0.06);
+  --ui-shadow-card: 0 1px 2px rgba(16, 24, 40, 0.05), 0 4px 16px rgba(16, 24, 40, 0.06);
+  --ui-shadow-pop: 0 20px 60px rgba(16, 24, 40, 0.18);
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #111317;
-    --bg-subtle: #0c0e11;
-    --surface: #181b20;
-    --surface-2: #1f232a;
-    --surface-3: #2a2f38;
-    --border: #262b33;
-    --border-strong: #3a404b;
-    --text: #ececf1;
-    --text-2: #c9ccd4;
-    --muted: #9aa0ab;
-    --accent: #8ea5ff;
-    --accent-solid: #4468e8;
-    --accent-solid-hover: #5577f0;
-    --accent-soft: rgba(142, 165, 255, 0.12);
-    --success: #34d399;
-    --danger: #ff9b91;
-    --danger-soft: #3a1d1f;
-    --warning: #f5c26b;
-    --warning-soft: #3a2f17;
-    --code-bg: rgba(255, 255, 255, 0.08);
-    --overlay: rgba(0, 0, 0, 0.6);
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+    --ui-bg: #0f1115;
+    --ui-bg-subtle: #0b0d10;
+    --ui-surface: #171a21;
+    --ui-surface-2: #1e222b;
+    --ui-surface-3: #282d38;
+    --ui-border: #262b35;
+    --ui-border-strong: #3a414e;
+    --ui-text: #eceef2;
+    --ui-text-2: #c8ccd5;
+    --ui-muted: #969dab;
+    --ui-accent: #8fa6ff;
+    --ui-accent-soft: rgba(143, 166, 255, 0.12);
+    --ui-success: #32d583;
+    --ui-danger: #ff9c8f;
+    --ui-danger-soft: rgba(255, 90, 70, 0.12);
+    --ui-warning: #fdb022;
+    --ui-warning-soft: rgba(253, 176, 34, 0.12);
+    --ui-code-bg: rgba(255, 255, 255, 0.07);
+    --ui-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 16px rgba(0, 0, 0, 0.3);
+    --ui-shadow-pop: 0 20px 60px rgba(0, 0, 0, 0.6);
     color-scheme: dark;
   }
 }
 
 :root[data-theme='dark'] {
-  --bg: #111317;
-  --bg-subtle: #0c0e11;
-  --surface: #181b20;
-  --surface-2: #1f232a;
-  --surface-3: #2a2f38;
-  --border: #262b33;
-  --border-strong: #3a404b;
-  --text: #ececf1;
-  --text-2: #c9ccd4;
-  --muted: #9aa0ab;
-  --accent: #8ea5ff;
-  --accent-solid: #4468e8;
-  --accent-solid-hover: #5577f0;
-  --accent-soft: rgba(142, 165, 255, 0.12);
-  --success: #34d399;
-  --danger: #ff9b91;
-  --danger-soft: #3a1d1f;
-  --warning: #f5c26b;
-  --warning-soft: #3a2f17;
-  --code-bg: rgba(255, 255, 255, 0.08);
-  --overlay: rgba(0, 0, 0, 0.6);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --ui-bg: #0f1115;
+  --ui-bg-subtle: #0b0d10;
+  --ui-surface: #171a21;
+  --ui-surface-2: #1e222b;
+  --ui-surface-3: #282d38;
+  --ui-border: #262b35;
+  --ui-border-strong: #3a414e;
+  --ui-text: #eceef2;
+  --ui-text-2: #c8ccd5;
+  --ui-muted: #969dab;
+  --ui-accent: #8fa6ff;
+  --ui-accent-soft: rgba(143, 166, 255, 0.12);
+  --ui-success: #32d583;
+  --ui-danger: #ff9c8f;
+  --ui-danger-soft: rgba(255, 90, 70, 0.12);
+  --ui-warning: #fdb022;
+  --ui-warning-soft: rgba(253, 176, 34, 0.12);
+  --ui-code-bg: rgba(255, 255, 255, 0.07);
+  --ui-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 16px rgba(0, 0, 0, 0.3);
+  --ui-shadow-pop: 0 20px 60px rgba(0, 0, 0, 0.6);
   color-scheme: dark;
 }
 
-/* ---------- Base ---------- */
+/* Nomes usados nas classes do Tailwind: bg-surface, text-fg, border-line, shadow-card... */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-*, *::before, *::after { box-sizing: border-box; }
-[hidden] { display: none !important; }
+  --color-bg: var(--ui-bg);
+  --color-bg-subtle: var(--ui-bg-subtle);
+  --color-surface: var(--ui-surface);
+  --color-surface-2: var(--ui-surface-2);
+  --color-surface-3: var(--ui-surface-3);
+  --color-line: var(--ui-border);
+  --color-line-strong: var(--ui-border-strong);
+  --color-fg: var(--ui-text);
+  --color-fg-2: var(--ui-text-2);
+  --color-muted: var(--ui-muted);
+  --color-accent: var(--ui-accent);
+  --color-accent-soft: var(--ui-accent-soft);
+  --color-success: var(--ui-success);
+  --color-danger: var(--ui-danger);
+  --color-danger-soft: var(--ui-danger-soft);
+  --color-warning: var(--ui-warning);
+  --color-warning-soft: var(--ui-warning-soft);
 
-html, body { height: 100%; }
-
-body {
-  margin: 0;
-  overflow: hidden;
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.55;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
+  --shadow-card: var(--ui-shadow-card);
+  --shadow-pop: var(--ui-shadow-pop);
 }
 
-button, input, textarea { font: inherit; color: inherit; }
-button { -webkit-tap-highlight-color: transparent; }
+/* Cores da marca (iguais nos dois temas) e animações */
+@theme {
+  --color-brand: #2f5bea;
+  --color-brand-2: #5b47e0;
 
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  --animate-fade-up: fade-up 0.3s ease-out both;
+  --animate-pop-in: pop-in 0.22s ease-out both;
+  --animate-blink: blink 1.2s ease-in-out infinite;
 
-::selection { background: var(--accent-soft); }
-
-/* Barras de rolagem discretas */
-* { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
-
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pop-in {
+    from { opacity: 0; transform: translateY(10px) scale(0.98); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes blink {
+    0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(-3px); }
+  }
 }
 
-/* ---------- Markdown das respostas (HTML gerado por lib/markdown.js) ---------- */
+/* ============================================================================
+   Base
+   ========================================================================== */
 
-.markdown { overflow-wrap: anywhere; }
-.markdown p { margin: 0 0 0.75em; }
-.markdown ul,
-.markdown ol { margin: 0 0 0.75em; padding-left: 1.4em; }
-.markdown li + li { margin-top: 0.25em; }
-.markdown > :last-child { margin-bottom: 0; }
-.markdown strong { font-weight: 600; }
-.markdown a { color: var(--accent); text-underline-offset: 2px; }
-.markdown code {
-  padding: 0.12em 0.4em;
-  border-radius: 6px;
-  background: var(--code-bg);
-  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
-  font-size: 0.88em;
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-bg text-fg antialiased;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ui-accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--ui-accent-soft);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--ui-border-strong) transparent;
+  }
 }
-.markdown pre {
-  margin: 0 0 0.75em;
-  padding: 12px 14px;
-  border-radius: 12px;
-  background: var(--code-bg);
-  overflow-x: auto;
+
+/* ============================================================================
+   Componentes que não dá para fazer só com classes
+   ========================================================================== */
+
+@layer components {
+  /* Texto das respostas do bot (HTML gerado por lib/markdown.js) */
+  .markdown {
+    overflow-wrap: anywhere;
+    line-height: 1.65;
+  }
+  .markdown p { margin: 0 0 0.8em; }
+  .markdown ul,
+  .markdown ol { margin: 0 0 0.8em; padding-left: 1.35em; }
+  .markdown ul { list-style: disc; }
+  .markdown ol { list-style: decimal; }
+  .markdown li + li { margin-top: 0.3em; }
+  .markdown li::marker { color: var(--ui-muted); }
+  .markdown > :last-child { margin-bottom: 0; }
+  .markdown strong { font-weight: 600; color: var(--ui-text); }
+  .markdown em { color: var(--ui-text-2); }
+  .markdown a { color: var(--ui-accent); text-decoration: underline; text-underline-offset: 2px; }
+  .markdown code {
+    padding: 0.12em 0.4em;
+    border-radius: 6px;
+    background: var(--ui-code-bg);
+    font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+    font-size: 0.88em;
+  }
+  .markdown pre {
+    margin: 0 0 0.8em;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: var(--ui-code-bg);
+    overflow-x: auto;
+  }
+  .markdown pre code { padding: 0; background: none; }
+
+  /* Textura de pontinhos (painel do login) */
+  .bg-dots {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
 }
-.markdown pre code { padding: 0; background: none; }
-
-/* ---------- Animações ---------- */
-
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: none; }
-}
-
-@keyframes spin { to { transform: rotate(360deg); } }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

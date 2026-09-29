@@ -1,10 +1,10 @@
-// Service worker do PWA (registrado só em produção, ver components/ServiceWorker.js).
+// Service worker do PWA (registrado só em produção, ver components/pwa/ServiceWorker.jsx).
 //
 // Estratégia "rede primeiro": busca sempre a versão nova no servidor e guarda uma cópia;
 // sem internet, entrega a cópia guardada. Assim o app instalado abre offline e mostra o
 // histórico, e nunca fica preso numa versão antiga. Responder continua precisando de rede.
 
-const CACHE = 'chatbot-v1';
+const CACHE = 'chatbot-v2';
 
 const PRECACHE = [
   '/',

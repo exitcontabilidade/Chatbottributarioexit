@@ -1,0 +1,834 @@
+{
+  "_meta": {
+    "temas": {},
+    "modulos": {
+      "ec132_01_ibs_e_cbs_na_constituicao": {
+        "title": "IBS e CBS na Constituição",
+        "description": "Características, não cumulatividade, destino, regimes específicos e cashback",
+        "icon": "landmark",
+        "tone": "violet"
+      },
+      "ec132_02_comite_gestor_e_reparticao": {
+        "title": "Comitê Gestor e repartição",
+        "description": "Como o Comitê Gestor decide e como o IBS é dividido entre os entes",
+        "icon": "split",
+        "tone": "cyan"
+      },
+      "ec132_03_transicao": {
+        "title": "Transição (2026 a 2033)",
+        "description": "Alíquotas de teste, redução do ICMS e do ISS, saldos credores e fundos",
+        "icon": "calendar",
+        "tone": "amber"
+      },
+      "ec132_04_imposto_seletivo_e_ipi": {
+        "title": "Imposto Seletivo e IPI",
+        "description": "Regras do Imposto Seletivo e o que acontece com o IPI",
+        "icon": "factory",
+        "tone": "rose"
+      }
+    }
+  },
+  "ec132_2023": {
+    "ec132_01_ibs_e_cbs_na_constituicao": [
+      {
+        "id": "ec132-01",
+        "pergunta": "O que é o IBS e como ele foi criado pela Reforma Tributária?",
+        "resposta": "O **IBS (Imposto sobre Bens e Serviços)** é o novo imposto sobre o consumo, de **competência compartilhada entre Estados, Distrito Federal e Municípios**. A Constituição (art. 156-A, incluído pela EC 132/2023) manda instituí-lo por **lei complementar**.\n\nEle substitui o ICMS (estadual) e o ISS (municipal), que serão **extintos a partir de 2033** (ADCT, art. 129).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, caput",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 129",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 129"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-02",
+        "pergunta": "O que é a CBS e qual é a relação dela com o IBS?",
+        "resposta": "A **CBS (Contribuição sobre Bens e Serviços)** é o tributo federal do novo sistema, previsto no art. 195, V, da Constituição, nos termos de lei complementar. Ela é instituída pela **mesma lei complementar** do IBS (ADCT, art. 124, parágrafo único).\n\nIBS e CBS seguem as **mesmas regras** quanto a (art. 149-B):\n- fatos geradores, bases de cálculo, hipóteses de não incidência e sujeitos passivos;\n- imunidades;\n- regimes específicos, diferenciados ou favorecidos;\n- não cumulatividade e creditamento.\n\nA alíquota da CBS pode ser fixada em **lei ordinária** (art. 195, § 15).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 149-B",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 149-B"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 195, V e § 15",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 195"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 124, parágrafo único",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 124"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-03",
+        "pergunta": "Quais são as características do IBS previstas na Constituição?",
+        "resposta": "O art. 156-A, § 1º, da Constituição estabelece que o IBS:\n- é informado pelo princípio da **neutralidade**;\n- incide sobre operações com bens materiais ou imateriais (inclusive direitos) e com serviços, e também sobre a **importação**;\n- **não incide sobre exportações**, e o exportador mantém os créditos;\n- tem **legislação única e uniforme** em todo o território nacional;\n- tem alíquota própria de cada ente federativo, fixada por lei específica e **igual para todas as operações** (salvo as exceções da Constituição);\n- é cobrado pelo **somatório das alíquotas do Estado e do Município de destino**;\n- é **não cumulativo**;\n- não integra a sua própria base de cálculo;\n- não admite incentivos ou benefícios fiscais, salvo os previstos na Constituição;\n- terá, sempre que possível, o valor informado de forma específica no documento fiscal.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-04",
+        "pergunta": "O IBS incide sobre importações? E sobre exportações?",
+        "resposta": "**Importações: sim.** O IBS incide sobre a importação de bens materiais ou imateriais (inclusive direitos) e de serviços, feita por pessoa física ou jurídica, **ainda que não seja contribuinte habitual** do imposto e **qualquer que seja a finalidade** da importação (art. 156-A, § 1º, II).\n\n**Exportações: não.** O imposto não incide sobre exportações, e o exportador tem assegurados a **manutenção e o aproveitamento dos créditos** das operações em que foi adquirente (art. 156-A, § 1º, III).\n\nA CBS segue as mesmas regras (art. 195, § 16).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º, II e III",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 195, § 16",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 195"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-05",
+        "pergunta": "Onde o IBS é devido: como funciona a cobrança pelo destino da operação?",
+        "resposta": "O IBS é cobrado pelo **somatório das alíquotas do Estado e do Município de destino** da operação (art. 156-A, § 1º, VII). Cada ente fixa a sua alíquota própria por lei específica (inciso V), e ela é a mesma para todas as operações com bens e serviços, ressalvadas as exceções constitucionais (inciso VI). O Distrito Federal exerce as competências estadual e municipal na fixação de suas alíquotas (§ 2º).\n\nA lei complementar define os critérios para identificar o **destino**, que poderá ser o local da entrega, da disponibilização ou da localização do bem, o da prestação ou disponibilização do serviço, ou o domicílio ou a localização do adquirente ou destinatário, admitidas diferenciações conforme as características da operação (§ 5º, IV).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º, V a VII, § 2º e § 5º, IV",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-06",
+        "pergunta": "Como funciona a não cumulatividade do IBS e da CBS?",
+        "resposta": "O IBS é **não cumulativo**: o contribuinte compensa o imposto que deve com o montante cobrado sobre **todas as operações em que foi adquirente** de bens (materiais ou imateriais, inclusive direitos) ou de serviços. Ficam de fora **exclusivamente** as aquisições de **uso ou consumo pessoal** especificadas em lei complementar e as hipóteses previstas na própria Constituição (art. 156-A, § 1º, VIII).\n\nA lei complementar também disciplina o regime de compensação, podendo condicionar o crédito à verificação do **efetivo recolhimento** do imposto da operação, nas condições do § 5º, II, e a forma e o prazo de **ressarcimento** dos créditos acumulados (§ 5º, III).\n\nPara a CBS, valem as mesmas regras de não cumulatividade e creditamento (art. 149-B, IV).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º, VIII e § 5º, II e III",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 149-B, IV",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 149-B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-07",
+        "pergunta": "IPI, ICMS, ISS, PIS e Cofins entram na base de cálculo do IBS e da CBS?",
+        "resposta": "Não. O art. 133 do ADCT determina que os tributos abaixo **não integram a base de cálculo** do IBS nem da CBS:\n- o IPI (art. 153, IV);\n- o ICMS (art. 155, II);\n- o ISS (art. 156, III);\n- as contribuições do art. 195, I, “b”, e IV, e o PIS (art. 239).\n\nAlém disso, o próprio IBS **não integra a sua própria base** nem a do Imposto Seletivo, da CBS e das contribuições citadas no art. 156-A, § 1º, IX.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 133",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 133"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º, IX",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-08",
+        "pergunta": "Pode haver incentivos fiscais ou alíquotas diferentes no IBS?",
+        "resposta": "Como regra, **não**. A Constituição estabelece que:\n- o IBS **não será objeto de incentivos e benefícios financeiros ou fiscais**, nem de **regimes específicos, diferenciados ou favorecidos** de tributação, **excetuadas as hipóteses previstas na própria Constituição** (art. 156-A, § 1º, X);\n- a alíquota fixada por cada ente é a **mesma para todas as operações** com bens e serviços, ressalvadas as hipóteses constitucionais (art. 156-A, § 1º, VI).\n\nAs exceções estão principalmente nos regimes específicos do art. 156-A, § 6º (combustíveis, serviços financeiros, cooperativas, entre outros).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º, VI e X",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-09",
+        "pergunta": "Quais regimes específicos de tributação a Constituição prevê para o IBS e a CBS?",
+        "resposta": "O art. 156-A, § 6º, manda a lei complementar disciplinar regimes específicos para:\n- **combustíveis e lubrificantes**, com incidência **uma única vez**, alíquotas uniformes no País, específicas por unidade de medida e diferenciadas por produto;\n- **serviços financeiros, operações com bens imóveis, planos de assistência à saúde e concursos de prognósticos**;\n- **sociedades cooperativas** (regime **optativo**);\n- **hotelaria, parques de diversão e temáticos, agências de viagens e turismo, bares e restaurantes, atividade esportiva de Sociedade Anônima do Futebol e aviação regional**;\n- operações alcançadas por **tratado ou convenção internacional**, inclusive missões diplomáticas, repartições consulares e organismos internacionais;\n- **transporte coletivo de passageiros** rodoviário intermunicipal e interestadual, ferroviário e hidroviário.\n\nA lei complementar poderá prever alterações nas alíquotas, nas bases de cálculo e nas regras de creditamento, conforme o caso.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 6º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-10",
+        "pergunta": "Operação isenta ou imune gera crédito para quem compra?",
+        "resposta": "Não. Segundo o art. 156-A, § 7º, da Constituição, a isenção e a imunidade:\n- **não implicam crédito** para compensar com o montante devido nas operações seguintes; e\n- **acarretam a anulação do crédito** relativo às operações anteriores.\n\nA exceção é a **imunidade**: a lei complementar pode determinar que o crédito das operações anteriores **não seja anulado** (inclusive no caso da radiodifusão sonora e de sons e imagens de recepção livre e gratuita).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 7º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-11",
+        "pergunta": "Quem pode ser responsabilizado pelo IBS, mesmo morando no exterior?",
+        "resposta": "A lei complementar poderá definir como **sujeito passivo** do IBS a pessoa que **concorrer para a realização, a execução ou o pagamento da operação**, **ainda que residente ou domiciliada no exterior** (art. 156-A, § 3º).\n\nEssa regra também vale para a CBS (art. 195, § 16).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 3º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 195, § 16",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 195"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-12",
+        "pergunta": "Como fica a compra de bens de capital (máquinas e equipamentos) no IBS e na CBS?",
+        "resposta": "A Constituição manda a lei complementar definir a forma de **desoneração da aquisição de bens de capital**, que poderá ser feita por (art. 156-A, § 5º, V):\n- **crédito integral e imediato** do imposto;\n- **diferimento**; ou\n- **redução em 100%** das alíquotas do imposto.\n\nA CBS segue a mesma regra (art. 195, § 16).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 5º, V",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 195, § 16",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 195"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-13",
+        "pergunta": "O que é a devolução do IBS e da CBS a pessoas físicas (o “cashback”)?",
+        "resposta": "É a **devolução do imposto a pessoas físicas** com o objetivo de **reduzir as desigualdades de renda**. A lei complementar definirá as hipóteses, incluindo os limites e os beneficiários (art. 156-A, § 5º, VIII). Para a CBS, a lei também estabelecerá as hipóteses de devolução (art. 195, § 18).\n\nPontos fixados pela Constituição:\n- a devolução é **obrigatória** no fornecimento de **energia elétrica** e de **gás liquefeito de petróleo (GLP)** ao **consumidor de baixa renda**, e a lei complementar pode determinar que seja calculada e concedida **no momento da cobrança** (art. 156-A, § 13);\n- a devolução **não entra nas bases de cálculo** de repartições e mínimos constitucionais, como saúde e educação (art. 156-A, § 12).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 5º, VIII, § 12 e § 13",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 195, § 18",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 195"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-14",
+        "pergunta": "O que é a alíquota de referência do IBS e da CBS e quem a define?",
+        "resposta": "A **alíquota de referência** é a alíquota que vale para cada esfera federativa (União, Estados e Municípios) **quando o próprio ente não fixar a sua**. Ela é fixada por **resolução do Senado Federal**, nos termos de lei complementar (art. 156-A, § 1º, XII). Estados, Distrito Federal e Municípios podem **optar por vincular** suas alíquotas à de referência (§ 10).\n\nNa transição, o Senado deve fixar as alíquotas de referência de modo a assegurar que a receita de cada esfera seja equivalente à que ela perde com os tributos substituídos. O cálculo é feito pelo **Tribunal de Contas da União**, e as alíquotas são fixadas **no ano anterior** ao de sua vigência (ADCT, art. 130, § 1º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º, XII e § 10",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 130, caput e § 1º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 130"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-15",
+        "pergunta": "O que acontece se uma lei federal aumentar ou reduzir a arrecadação do IBS?",
+        "resposta": "Qualquer alteração na legislação federal que **reduza ou eleve a arrecadação** do IBS deve ser **compensada** pelo Senado Federal, que eleva ou reduz as alíquotas de referência para **preservar a arrecadação** das esferas federativas (art. 156-A, § 9º, I).\n\nA alteração **só entra em vigor** quando começar a produzir efeitos o ajuste das alíquotas de referência (art. 156-A, § 9º, II).\n\nAlém disso, projeto de lei complementar que reduza ou aumente a arrecadação do imposto só é apreciado se vier acompanhado de **estimativa de impacto** no valor das alíquotas de referência (art. 156-A, § 11).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 9º e § 11",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-16",
+        "pergunta": "Como ficam as compras feitas pelo governo (administração pública) no IBS e na CBS?",
+        "resposta": "Nas operações contratadas pela **administração pública direta, autarquias e fundações públicas** (inclusive importações), o produto da arrecadação do IBS e da CBS é **integralmente destinado ao ente federativo contratante**. Isso é feito **reduzindo a zero** as alíquotas devidas aos demais entes e **elevando** a alíquota do ente contratante (art. 149-C, caput).\n\nA lei complementar pode reduzir as alíquotas dessas operações de modo **uniforme** (§ 1º) e prever hipóteses em que a regra não se aplica (§ 2º). Nas importações do poder público, a imunidade recíproca é aplicada por esse mesmo mecanismo, com igualdade de tratamento em relação às compras internas (§ 3º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 149-C",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 149-C"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-17",
+        "pergunta": "Rádio e TV abertas pagam IBS?",
+        "resposta": "Não. O IBS **não incide** sobre as prestações de serviço de comunicação nas modalidades de **radiodifusão sonora** e de **sons e imagens de recepção livre e gratuita** (art. 156-A, § 1º, XI).\n\nA LC 214/2025 também prevê essa hipótese como imunidade ao IBS e à CBS (art. 9º, VI).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 1º, XI",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "LC 214/2025",
+            "referencia": "art. 9º, VI",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm#art9",
+            "lei": "lcp214",
+            "artigos": [
+              "9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-18",
+        "pergunta": "As cooperativas terão tratamento diferenciado no IBS e na CBS?",
+        "resposta": "Sim. A Constituição prevê:\n- **adequado tratamento tributário ao ato cooperativo** praticado pelas cooperativas, inclusive em relação ao IBS e à CBS (art. 146, III, “c”);\n- um **regime específico optativo** para as cooperativas, com vistas a assegurar sua competitividade (art. 156-A, § 6º, III).\n\nA lei complementar define, entre outros pontos, as hipóteses em que o imposto **não incide** sobre as operações entre a cooperativa e seus associados, entre estes e ela, e entre cooperativas associadas para a consecução de seus objetivos sociais, além do regime de aproveitamento do crédito das etapas anteriores.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 146, III, “c”",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 146"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 6º, III",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-19",
+        "pergunta": "Como o Simples Nacional convive com o IBS e a CBS?",
+        "resposta": "A Constituição garante **tratamento diferenciado e favorecido** às microempresas e empresas de pequeno porte, inclusive regimes especiais ou simplificados para o IBS e a CBS (art. 146, III, “d”).\n\nSobre o regime único (Simples Nacional):\n- o optante pode **apurar e recolher o IBS e a CBS pelo regime regular**, e as parcelas correspondentes **não serão cobradas** pelo regime único (art. 146, § 2º);\n- se o IBS e a CBS forem recolhidos **dentro do regime único**, enquanto durar a opção: o **optante não apropria créditos**; e o **adquirente não optante** pode apropriar créditos em montante **equivalente ao cobrado** por meio do regime único (art. 146, § 3º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 146, III, “d”, § 2º e § 3º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 146"
+            ]
+          }
+        ]
+      }
+    ],
+    "ec132_02_comite_gestor_e_reparticao": [
+      {
+        "id": "ec132-20",
+        "pergunta": "O que é o Comitê Gestor do IBS e quais são suas competências?",
+        "resposta": "O **Comitê Gestor do IBS (CGIBS)** é uma **entidade pública sob regime especial**, com **independência técnica, administrativa, orçamentária e financeira** (art. 156-B, § 1º). Estados, Distrito Federal e Municípios exercem de forma integrada, **exclusivamente por meio dele**, as competências administrativas do IBS (art. 156-B, caput):\n- editar o **regulamento único** e uniformizar a interpretação e a aplicação da legislação do imposto;\n- **arrecadar** o imposto, efetuar as compensações e **distribuir** o produto da arrecadação entre Estados, Distrito Federal e Municípios;\n- decidir o **contencioso administrativo**.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-B, caput e § 1º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-21",
+        "pergunta": "Como é composto o Comitê Gestor do IBS?",
+        "resposta": "A instância máxima de deliberação do Comitê Gestor tem **54 membros** (27 + 27, art. 156-B, § 3º):\n- **27** representando cada Estado e o Distrito Federal;\n- **27** representando o conjunto dos Municípios e do Distrito Federal, sendo **14** eleitos com base nos votos de cada Município, com valor igual para todos, e **13** eleitos com base nos votos ponderados pela população.\n\nA representação é **paritária** entre Estados e Municípios, e a presidência **alterna** entre o conjunto dos Estados e do Distrito Federal e o conjunto dos Municípios e do Distrito Federal (art. 156-B, § 2º, I e II). O presidente deve ter **notórios conhecimentos de administração tributária** (§ 5º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-B, § 2º, I e II, § 3º e § 5º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-22",
+        "pergunta": "Como as decisões do Comitê Gestor do IBS são aprovadas?",
+        "resposta": "As deliberações são aprovadas se obtiverem, **cumulativamente**, os votos (art. 156-B, § 4º):\n- **dos Estados e do Distrito Federal:** a **maioria absoluta** de seus representantes **e** representantes que correspondam a **mais de 50%** da população do País;\n- **dos Municípios e do Distrito Federal:** a **maioria absoluta** de seus representantes.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-B, § 4º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-23",
+        "pergunta": "Quem fiscaliza e cobra o IBS: o Comitê Gestor ou os Estados e Municípios?",
+        "resposta": "A **fiscalização, o lançamento, a cobrança e a representação administrativa e judicial** do IBS são feitos pelas **administrações tributárias e procuradorias dos Estados, do Distrito Federal e dos Municípios**, no âmbito de suas competências. Elas podem definir hipóteses de **delegação ou compartilhamento** de competências, e ao Comitê Gestor cabe **coordenar** essas atividades para integrar os entes federativos (art. 156-B, § 2º, V).\n\nAs competências exclusivas das carreiras da administração tributária e das procuradorias são exercidas, no Comitê Gestor, por **servidores dessas carreiras** (art. 156-B, § 2º, VI).\n\nO Comitê Gestor, a administração tributária da União e a PGFN **compartilham informações fiscais** e atuam para harmonizar normas, interpretações, obrigações acessórias e procedimentos do IBS e da CBS (art. 156-B, § 6º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-B, § 2º, V e VI, e § 6º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-24",
+        "pergunta": "Como o dinheiro arrecadado com o IBS é distribuído entre Estados e Municípios?",
+        "resposta": "Para distribuir o produto da arrecadação, o Comitê Gestor (art. 156-A, § 4º):\n1. **retém** o montante equivalente ao saldo acumulado de créditos não compensados pelos contribuintes e não ressarcidos ao final de cada período de apuração, e os valores da devolução a pessoas físicas;\n2. **distribui** o restante ao **ente federativo de destino** das operações que não tenham gerado creditamento.\n\nA lei complementar define as regras de distribuição: a forma de cálculo, o tratamento das operações em que o imposto não é recolhido no prazo e as regras dos regimes favorecidos, específicos e diferenciados (art. 156-A, § 5º, I). O Comitê Gestor é financiado por um **percentual da arrecadação** destinada a cada ente (art. 156-B, § 2º, III).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-A, § 4º e § 5º, I",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 156-B, § 2º, III",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 156-B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-25",
+        "pergunta": "Como o Estado reparte com os Municípios a sua parte do IBS?",
+        "resposta": "Os Municípios recebem **25%** da parte do IBS distribuída aos Estados (art. 158, IV, “b”). Essa parcela é creditada pelos seguintes critérios (art. 158, § 2º):\n- **80%** na proporção da **população**;\n- **10%** com base em indicadores de melhoria nos resultados de **aprendizagem** e de aumento da equidade, considerado o nível socioeconômico dos educandos, conforme lei estadual;\n- **5%** com base em indicadores de **preservação ambiental**, conforme lei estadual;\n- **5%** em montantes **iguais** para todos os Municípios do Estado.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 158, IV, “b” e § 2º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 158"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-26",
+        "pergunta": "O que é o Fundo Nacional de Desenvolvimento Regional?",
+        "resposta": "O **Fundo Nacional de Desenvolvimento Regional (FNDR)** foi instituído pelo art. 159-A da Constituição, com o objetivo de **reduzir as desigualdades regionais e sociais**, mediante a entrega de recursos da **União aos Estados e ao Distrito Federal** para:\n- estudos, projetos e obras de **infraestrutura**;\n- fomento a **atividades produtivas** com elevado potencial de geração de emprego e renda, incluindo subvenções econômicas e financeiras;\n- ações de **desenvolvimento científico e tecnológico** e **inovação**.\n\nOs recursos são entregues segundo coeficientes individuais de participação: **30%** pela população do Estado ou do Distrito Federal e **70%** pelo coeficiente de participação nos recursos do art. 159, I, “a” (§ 4º). É **vedada a retenção** ou qualquer restrição ao recebimento (§ 1º), e o **Tribunal de Contas da União** regulamenta e calcula os coeficientes (§ 5º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 159-A",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 159-A"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-27",
+        "pergunta": "O que a Reforma prevê para a Zona Franca de Manaus?",
+        "resposta": "As leis do IBS e da CBS deverão estabelecer os **mecanismos necessários, com ou sem contrapartidas, para manter o diferencial competitivo** da Zona Franca de Manaus e das áreas de livre comércio existentes em 31 de maio de 2023, **nos níveis da legislação dos tributos extintos** (ADCT, art. 92-B, caput). Podem ser usados instrumentos fiscais, econômicos ou financeiros, isolada ou cumulativamente (§ 1º).\n\nTambém haverá, por lei complementar, o **Fundo de Sustentabilidade e Diversificação Econômica do Estado do Amazonas** (§ 2º), com recursos da União, e o **Fundo de Desenvolvimento Sustentável dos Estados da Amazônia Ocidental e do Amapá** (§ 6º).\n\nA União pode, mediante acordo com o Amazonas, reduzir o alcance desses instrumentos, condicionado a aporte adicional de recursos ao Fundo e à antecedência mínima de **3 anos** (§ 4º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 92-B",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 92-B"
+            ]
+          }
+        ]
+      }
+    ],
+    "ec132_03_transicao": [
+      {
+        "id": "ec132-28",
+        "pergunta": "Como será a cobrança do IBS e da CBS em 2026 (ano de teste)?",
+        "resposta": "Em **2026**, o IBS será cobrado à alíquota estadual de **0,1%** e a CBS à alíquota de **0,9%** (ADCT, art. 125, caput).\n\nRegras desse ano:\n- o valor recolhido é **compensado** com o devido das contribuições do art. 195, I, “b”, e IV, e do PIS (art. 239), que na prática são o PIS e a Cofins (§ 1º);\n- se o contribuinte não tiver débitos suficientes, pode compensar com **qualquer outro tributo federal** ou pedir **ressarcimento em até 60 dias** (§ 2º);\n- quem cumprir as **obrigações acessórias** pode ser **dispensado do recolhimento**, nos termos de lei complementar (§ 4º);\n- a arrecadação do IBS nesse ano vai para financiar o Comitê Gestor e compor o Fundo de Compensação de Benefícios Fiscais do ICMS (§ 3º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 125",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 125"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-29",
+        "pergunta": "O que muda a partir de 2027 com a Reforma Tributária?",
+        "resposta": "A partir de **2027** (ADCT, art. 126):\n- passam a ser cobrados a **CBS** (art. 195, V) e o **Imposto Seletivo** (art. 153, VIII);\n- são **extintas** as contribuições do art. 195, I, “b”, e IV, e o **PIS** (art. 239), desde que já instituída a CBS;\n- o **IPI** tem as alíquotas **reduzidas a zero**, exceto para produtos com industrialização incentivada na Zona Franca de Manaus, conforme critérios de lei complementar, e não incide de forma cumulativa com o Imposto Seletivo.\n\nAlém disso, em **2027 e 2028** o IBS é cobrado às alíquotas de **0,05%** (estadual) e **0,05%** (municipal), e a alíquota da CBS é **reduzida em 0,1 ponto percentual** (ADCT, art. 127).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 126",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 126"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 127",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 127"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-30",
+        "pergunta": "Como o ICMS e o ISS serão reduzidos de 2029 a 2032?",
+        "resposta": "De **2029 a 2032**, as alíquotas do ICMS (art. 155, II) e do ISS (art. 156, III) são fixadas em uma **proporção** das alíquotas previstas nas respectivas legislações (ADCT, art. 128):\n- **9/10** em 2029;\n- **8/10** em 2030;\n- **7/10** em 2031;\n- **6/10** em 2032.\n\nOs **benefícios e incentivos fiscais ou financeiros** relativos a esses impostos são **reduzidos na mesma proporção** (§ 1º). Os percentuais usados para calcular os benefícios já reduzidos ficam **mantidos em sua integralidade até 31 de dezembro de 2032** (§ 3º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 128",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 128"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-31",
+        "pergunta": "Quando o ICMS e o ISS deixam de existir?",
+        "resposta": "Os impostos previstos nos arts. 155, II (ICMS), e 156, III (ISS), da Constituição ficam **extintos a partir de 2033** (ADCT, art. 129).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 129",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 129"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-32",
+        "pergunta": "Existe um limite para a carga tributária do novo sistema?",
+        "resposta": "A Constituição cria um mecanismo de **teto de referência** (ADCT, art. 130, §§ 3º a 6º):\n- **Teto de Referência da União:** média da receita de **2012 a 2021**, como proporção do PIB, do IPI, das contribuições do art. 195, I, “b”, e IV, do PIS e do imposto sobre operações de seguro;\n- **Teto de Referência Total:** o mesmo cálculo, incluindo também o ICMS e o ISS.\n\nSe a média da receita da União com a CBS e o Imposto Seletivo em **2027 e 2028** exceder o teto da União, a alíquota de referência da CBS é **reduzida em 2030**. Se a média da receita total do novo sistema entre **2029 e 2033** exceder o Teto de Referência Total, as alíquotas de referência da CBS e do IBS são **reduzidas em 2035**.\n\nEssas revisões **não geram cobrança ou restituição** de tributo de anos anteriores nem transferência de recursos entre os entes (§ 7º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 130, §§ 3º a 7º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 130"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-33",
+        "pergunta": "Como a arrecadação do IBS será repartida entre os entes durante a transição (2029 a 2077)?",
+        "resposta": "De **2029 a 2077**, parte do IBS de cada ente é **retida** e redistribuída proporcionalmente à **receita média** de cada um (ADCT, art. 131):\n- **80%** retidos de 2029 a 2032;\n- **90%** retidos em 2033;\n- de **2034 a 2077**, o percentual de 2033 é **reduzido à razão de 1/45 por ano**.\n\nA parcela **não retida** é distribuída conforme os critérios da lei complementar, incluindo a variação de alíquota fixada pelo ente em relação à de referência (§ 4º). Nesse período, Estados, Distrito Federal e Municípios **não podem fixar alíquotas próprias inferiores** às necessárias para garantir as retenções (§ 6º).\n\nDo valor restante, ainda é retido **5%** para distribuição aos entes com as menores razões entre o valor apurado e a receita média (art. 132), percentual que é reduzido gradativamente **entre 2078 e 2097**, até a extinção (art. 132, § 3º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 131",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 131"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 132",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 132"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-34",
+        "pergunta": "O que acontece com os saldos credores de ICMS que sobrarem no fim de 2032?",
+        "resposta": "Os saldos credores de ICMS **existentes ao final de 2032** serão aproveitados pelos contribuintes na forma do art. 134 do ADCT e da lei complementar:\n- alcançam os saldos cujo aproveitamento ou ressarcimento sejam admitidos pela legislação vigente em 31 de dezembro de 2032 e que tenham sido **homologados** pelo ente federativo (§ 1º);\n- se o ente **não responder** ao pedido de homologação no prazo da lei complementar, os saldos são considerados **homologados** (§ 1º, II);\n- os Estados informam o saldo ao Comitê Gestor, que o **compensa com o IBS**: pelo prazo remanescente, para créditos de **ativo permanente**, ou em **240 parcelas mensais**, iguais e sucessivas, nos demais casos (§ 3º);\n- a partir de **2033**, os saldos são atualizados pelo **IPCA** ou índice que o substitua (§ 5º).\n\nA lei complementar também disporá sobre a **transferência dos créditos a terceiros** e sobre o **ressarcimento** quando não for possível compensar (§ 6º).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 134",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 134"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-35",
+        "pergunta": "O que acontece com os créditos de PIS, Cofins e IPI que o contribuinte não conseguir usar até a extinção desses tributos?",
+        "resposta": "A lei complementar disciplinará a forma de utilização dos **créditos, inclusive presumidos**, do IPI e das contribuições do art. 195, I, “b”, e IV, e do PIS **não apropriados ou não utilizados até a extinção** desses tributos (ADCT, art. 135).\n\nPara os créditos que cumpram os requisitos da legislação vigente na data da extinção, fica mantida a permissão para **compensação com outros tributos federais**, inclusive com a **CBS**, ou **ressarcimento em dinheiro**.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 135",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 135"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-36",
+        "pergunta": "O que acontece com os fundos estaduais financiados por contribuições ligadas ao ICMS?",
+        "resposta": "Os Estados que tinham, em **30 de abril de 2023**, fundos para **obras de infraestrutura e habitação** financiados por contribuições sobre produtos primários e semielaborados (exigidas como condição para diferimento, regime especial ou outro tratamento diferenciado do ICMS) **poderão instituir contribuições semelhantes, não vinculadas ao ICMS** (ADCT, art. 136).\n\nCondições:\n- alíquota ou percentual **não superior**, e base **não mais ampla**, que os vigentes em 30 de abril de 2023;\n- a nova contribuição **substitui** a anterior, vinculada ao ICMS;\n- a receita deve ter a **mesma destinação**;\n- a contribuição será **extinta em 31 de dezembro de 2043**.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 136",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 136"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-37",
+        "pergunta": "Até quando vale a desvinculação de receitas dos Estados e Municípios?",
+        "resposta": "A Constituição desvincula de órgão, fundo ou despesa, **até 31 de dezembro de 2032**, **30%** das receitas de impostos, taxas e multas (já instituídos ou que vierem a ser criados até essa data), seus adicionais e acréscimos legais, e outras receitas correntes:\n- dos **Estados e do Distrito Federal** (ADCT, art. 76-A);\n- dos **Municípios** (ADCT, art. 76-B).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 76-A",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 76-A"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 76-B",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 76-B"
+            ]
+          }
+        ]
+      }
+    ],
+    "ec132_04_imposto_seletivo_e_ipi": [
+      {
+        "id": "ec132-38",
+        "pergunta": "O que é o Imposto Seletivo e quando ele começa a ser cobrado?",
+        "resposta": "O **Imposto Seletivo (IS)** incide sobre a **produção, extração, comercialização ou importação de bens e serviços prejudiciais à saúde ou ao meio ambiente**, nos termos de lei complementar (art. 153, VIII, da Constituição).\n\nEle passa a ser cobrado a partir de **2027** (ADCT, art. 126, I, “b”).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 153, VIII",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 153"
+            ]
+          },
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 126, I, “b”",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 126"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-39",
+        "pergunta": "Quais são as regras constitucionais do Imposto Seletivo?",
+        "resposta": "Segundo o art. 153, § 6º, da Constituição, o Imposto Seletivo:\n- **não incide** sobre **exportações** nem sobre operações com **energia elétrica** e com **telecomunicações**;\n- incide **uma única vez** sobre o bem ou serviço;\n- **não integra a sua própria base** de cálculo, mas **integra a base** do ICMS, do ISS, do IBS e da CBS;\n- pode ter o **mesmo fato gerador e base de cálculo** de outros tributos;\n- tem alíquotas fixadas em **lei ordinária**, podendo ser **específicas** (por unidade de medida) ou **ad valorem**;\n- na **extração**, é cobrado independentemente da destinação, com alíquota máxima de **1%** do valor de mercado do produto.",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "CF, art. 153, § 6º",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art1",
+            "lei": "emc132",
+            "artigos": [
+              "CF 153"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec132-40",
+        "pergunta": "O IPI deixa de existir com a Reforma Tributária?",
+        "resposta": "A EC 132/2023 **não extingue** o IPI. A partir de **2027**, o imposto tem as **alíquotas reduzidas a zero**, **exceto** para os produtos com industrialização incentivada na **Zona Franca de Manaus**, conforme critérios estabelecidos em lei complementar (ADCT, art. 126, III, “a”).\n\nAlém disso, o IPI **não incide de forma cumulativa** com o Imposto Seletivo (ADCT, art. 126, III, “b”).",
+        "fontes": [
+          {
+            "norma": "EC 132/2023",
+            "referencia": "ADCT, art. 126, III",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm#art2",
+            "lei": "emc132",
+            "artigos": [
+              "ADCT 126"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -2,9 +2,9 @@
 
 import { useLayoutEffect, useState } from 'react';
 import { Monitor, Moon, Sun } from 'lucide-react';
-import styles from './ThemeToggle.module.css';
+import { cn } from '@/lib/cn';
 
-// Mesmo nome lido pelo script do <head> em app/layout.js.
+// Mesmo nome lido pelo script do <head> em app/layout.jsx.
 const KEY = 'chatbot:tema';
 
 const OPTIONS = [
@@ -27,6 +27,7 @@ function applyTheme(theme) {
   else document.documentElement.setAttribute('data-theme', theme);
 }
 
+/** Escolha do tema: Sistema / Claro / Escuro. */
 export default function ThemeToggle() {
   const [theme, setTheme] = useState('system');
 
@@ -49,17 +50,20 @@ export default function ThemeToggle() {
   }
 
   return (
-    <div className={styles.toggle} role="radiogroup" aria-label="Tema">
+    <div role="radiogroup" aria-label="Tema" className="grid grid-cols-3 gap-0.5 rounded-xl bg-surface-3 p-0.5">
       {OPTIONS.map(({ value, label, Icon }) => (
         <button
           key={value}
           type="button"
           role="radio"
           aria-checked={theme === value}
-          className={`${styles.option} ${theme === value ? styles.selected : ''}`}
           onClick={() => choose(value)}
+          className={cn(
+            'flex h-8 items-center justify-center gap-1.5 rounded-[10px] text-xs font-medium transition',
+            theme === value ? 'bg-surface text-fg shadow-card' : 'text-muted hover:text-fg',
+          )}
         >
-          <Icon size={14} />
+          <Icon size={14} aria-hidden="true" />
           {label}
         </button>
       ))}

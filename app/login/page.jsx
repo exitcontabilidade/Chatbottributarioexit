@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import LoginForm from '@/components/LoginForm';
+import LoginForm from '@/components/auth/LoginForm';
 import { getSession } from '@/lib/server/session';
 
 export const metadata = { title: 'Entrar' };
